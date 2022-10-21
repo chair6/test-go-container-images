@@ -1,0 +1,12 @@
+FROM golang:alpine AS builder
+
+LABEL org.opencontainers.image.source=https://github.com/chair6/test-go-container-images
+
+WORKDIR /build
+
+COPY ./src/joinpath* /build/
+RUN go build -o joinpath joinpath.go
+
+FROM alpine:latest
+COPY --from=builder /build/joinpath /bin/joinpath
+ENTRYPOINT ["/bin/joinpath"]

@@ -1,0 +1,13 @@
+FROM golang:alpine AS builder
+
+LABEL org.opencontainers.image.source=https://github.com/chair6/test-go-container-images
+
+WORKDIR /build
+
+COPY ./src/jwtgo/* /build/
+RUN go get .
+RUN go build -o jwtgo jwtgo.go
+
+FROM alpine:latest
+COPY --from=builder /build/jwtgo /bin/jwtgo
+ENTRYPOINT ["/bin/jwtgo"]
