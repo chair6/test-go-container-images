@@ -1,0 +1,58 @@
+{
+	"results": [
+		{
+			"id": "sha256:a120fe53924c3b29fb6eec5717ca7f65d48346558a79e826e8bb9cf3b8505031",
+			"name": "test-go-container-image:joinpath-go-scratch",
+			"distro": "",
+			"collections": [
+				"All"
+			],
+			"applications": [
+				{
+					"name": "go",
+					"version": "1.19.2",
+					"path": "/bin/joinpath"
+				}
+			],
+			"compliances": [
+				{
+					"id": 41,
+					"title": "(CIS_Docker_v1.3.1 - 4.1) Image should be created with a non-root user",
+					"severity": "high",
+					"description": "It is a good practice to run the container as a non-root user, if possible. Though user\nnamespace mapping is now available, if a user is already defined in the container image, the\ncontainer is run as that user by default and specific user namespace remapping is not\nrequired",
+					"layerTime": "1969-12-31T16:00:00-08:00",
+					"category": "Docker"
+				}
+			],
+			"complianceDistribution": {
+				"critical": 0,
+				"high": 1,
+				"medium": 0,
+				"low": 0,
+				"total": 1
+			},
+			"complianceScanPassed": true,
+			"vulnerabilityDistribution": {
+				"critical": 0,
+				"high": 0,
+				"medium": 0,
+				"low": 0,
+				"total": 0
+			},
+			"vulnerabilityScanPassed": true,
+			"history": [
+				{
+					"created": "2022-10-24T09:23:43-07:00",
+					"instruction": "COPY /build/joinpath /bin/joinpath # buildkit"
+				},
+				{
+					"created": "2022-10-24T09:23:43-07:00",
+					"instruction": "ENTRYPOINT [\"/bin/joinpath\"]"
+				}
+			],
+			"scanTime": "2022-10-24T18:08:30.882626Z",
+			"scanID": "6356d49e51edcc34b8e7abe2"
+		}
+	],
+	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Aa120fe53924c3b29fb6eec5717ca7f65d48346558a79e826e8bb9cf3b8505031"
+}

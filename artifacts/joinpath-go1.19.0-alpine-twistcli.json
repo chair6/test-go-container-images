@@ -1,0 +1,253 @@
+{
+	"results": [
+		{
+			"id": "sha256:624e19ee611bc9e4a07f83ec13fb9658ece764d51db0d2dce6067117bfb6e36f",
+			"name": "test-go-container-image:joinpath-go1.19.0-alpine",
+			"distro": "Alpine Linux v3.16",
+			"distroRelease": "3.16.2",
+			"collections": [
+				"All"
+			],
+			"packages": [
+				{
+					"type": "os",
+					"name": "apk-tools",
+					"version": "2.12.9-r3",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "zlib",
+					"version": "1.2.12-r3",
+					"licenses": [
+						"Zlib"
+					]
+				},
+				{
+					"type": "os",
+					"name": "alpine-keys",
+					"version": "2.4-r1",
+					"licenses": [
+						"MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "musl",
+					"version": "1.2.3-r0",
+					"licenses": [
+						"MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "pax-utils",
+					"version": "1.3.4-r0",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "busybox",
+					"version": "1.35.0-r17",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "openssl",
+					"version": "1.1.1q-r0",
+					"licenses": [
+						"OpenSSL"
+					]
+				},
+				{
+					"type": "os",
+					"name": "ca-certificates",
+					"version": "20220614-r0",
+					"licenses": [
+						"MPL-2.0 AND MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "alpine-baselayout",
+					"version": "3.2.0-r22",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				}
+			],
+			"applications": [
+				{
+					"name": "busybox",
+					"version": "1.35.0",
+					"path": "/bin/busybox"
+				},
+				{
+					"name": "go",
+					"version": "1.19",
+					"path": "/bin/joinpath"
+				}
+			],
+			"compliances": [
+				{
+					"id": 41,
+					"title": "(CIS_Docker_v1.3.1 - 4.1) Image should be created with a non-root user",
+					"severity": "high",
+					"description": "It is a good practice to run the container as a non-root user, if possible. Though user\nnamespace mapping is now available, if a user is already defined in the container image, the\ncontainer is run as that user by default and specific user namespace remapping is not\nrequired",
+					"layerTime": "1969-12-31T16:00:00-08:00",
+					"category": "Docker"
+				}
+			],
+			"complianceDistribution": {
+				"critical": 0,
+				"high": 1,
+				"medium": 0,
+				"low": 0,
+				"total": 1
+			},
+			"complianceScanPassed": true,
+			"vulnerabilities": [
+				{
+					"id": "CVE-2022-41715",
+					"status": "fixed in 1.19.2, 1.18.7",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "Programs which compile regular expressions from untrusted sources may be vulnerable to memory exhaustion or denial of service. The parsed regexp representation is linear in the size of the input, but in some cases the constant factor can be as high as 40,000, making relatively small regexps consume much larger amounts of memory. After fix, each regexp being parsed is limited to a 256 MB memory footprint. Regular expressions whose representation would use more space than that are rejected. Normal use of regular expressions is unaffected.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.19",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-41715",
+					"riskFactors": [
+						"Attack complexity: low",
+						"Attack vector: network",
+						"DoS",
+						"Has fix",
+						"High severity",
+						"Recent vulnerability"
+					],
+					"impactedVersions": [
+						"\u003c1.19.2,1.19",
+						"\u003e=1.19.0,1.19"
+					],
+					"publishedDate": "2022-10-14T08:16:00-07:00",
+					"discoveredDate": "2022-10-24T11:08:40-07:00",
+					"fixDate": "2022-10-14T08:16:00-07:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2022-2880",
+					"status": "fixed in 1.19.2, 1.18.7",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+					"description": "Requests forwarded by ReverseProxy include the raw query parameters from the inbound request, including unparseable parameters rejected by net/http. This could permit query parameter smuggling when a Go proxy forwards a parameter with an unparseable value. After fix, ReverseProxy sanitizes the query parameters in the forwarded query when the outbound request\\'s Form field is set after the ReverseProxy. Director function returns, indicating that the proxy has parsed the query parameters. Proxies which do not parse query parameters continue to forward the original query parameters unchanged.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.19",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2880",
+					"riskFactors": [
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Has fix",
+						"High severity"
+					],
+					"impactedVersions": [
+						"\u003c1.19.2,1.19",
+						"\u003e=1.19.0,1.19"
+					],
+					"publishedDate": "2022-10-14T08:15:00-07:00",
+					"discoveredDate": "2022-10-24T11:08:40-07:00",
+					"fixDate": "2022-10-14T08:15:00-07:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2022-2879",
+					"status": "fixed in 1.19.2, 1.18.7",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "Reader.Read does not set a limit on the maximum size of file headers. A maliciously crafted archive could cause Read to allocate unbounded amounts of memory, potentially causing resource exhaustion or panics. After fix, Reader.Read limits the maximum size of header blocks to 1 MiB.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.19",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2879",
+					"riskFactors": [
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Has fix",
+						"High severity",
+						"Recent vulnerability"
+					],
+					"impactedVersions": [
+						"\u003c1.19.2,1.19",
+						"\u003e=1.19.0,1.19"
+					],
+					"publishedDate": "2022-10-14T08:15:00-07:00",
+					"discoveredDate": "2022-10-24T11:08:40-07:00",
+					"fixDate": "2022-10-14T08:15:00-07:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2022-27664",
+					"status": "fixed in 1.19.1, 1.18.6",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.19",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
+					"riskFactors": [
+						"Has fix",
+						"High severity",
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network",
+						"DoS"
+					],
+					"impactedVersions": [
+						"==1.19.0"
+					],
+					"publishedDate": "2022-09-06T11:15:00-07:00",
+					"discoveredDate": "2022-10-24T11:08:40-07:00",
+					"fixDate": "2022-09-06T11:15:00-07:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				}
+			],
+			"vulnerabilityDistribution": {
+				"critical": 0,
+				"high": 4,
+				"medium": 0,
+				"low": 0,
+				"total": 4
+			},
+			"vulnerabilityScanPassed": true,
+			"history": [
+				{
+					"created": "2022-08-09T10:19:53-07:00",
+					"instruction": "ADD file:2a949686d9886ac7c10582a6c29116fd29d3077d02755e87e111870d63607725 in / "
+				},
+				{
+					"created": "2022-08-09T10:19:53-07:00",
+					"instruction": "CMD [\"/bin/sh\"]"
+				},
+				{
+					"created": "2022-10-24T09:23:52-07:00",
+					"instruction": "COPY /build/joinpath /bin/joinpath # buildkit"
+				},
+				{
+					"created": "2022-10-24T09:23:52-07:00",
+					"instruction": "ENTRYPOINT [\"/bin/joinpath\"]"
+				}
+			],
+			"scanTime": "2022-10-24T18:08:43.470389Z",
+			"scanID": "6356d4ab4daf47ec9591c74f"
+		}
+	],
+	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A624e19ee611bc9e4a07f83ec13fb9658ece764d51db0d2dce6067117bfb6e36f"
+}
