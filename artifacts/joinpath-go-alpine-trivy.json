@@ -1,0 +1,72 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:joinpath-go-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.2"
+    },
+    "ImageID": "sha256:7524cd883bd45c991672b10c80cd9c9a89d2c5d52ae492ca7e58f1cfd8f0671a",
+    "DiffIDs": [
+      "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+      "sha256:fc2661d8dd77714bd2192510e485dfaf2bbc5cfc6dbca69f4204d30dee30a4f9"
+    ],
+    "RepoTags": [
+      "test-go-container-image:joinpath-go-alpine",
+      "ghcr.io/chair6/test-go-container-image:joinpath-go-alpine"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:05ddc480f2c41adbe9e21bb8613689034f63a82678b58a3f547d056f39fece05"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-24T01:57:18.199606216Z",
+      "history": [
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:2a949686d9886ac7c10582a6c29116fd29d3077d02755e87e111870d63607725 in / "
+        },
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-24T01:57:18Z",
+          "created_by": "COPY /build/joinpath /bin/joinpath # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T01:57:18Z",
+          "created_by": "ENTRYPOINT [\"/bin/joinpath\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+          "sha256:fc2661d8dd77714bd2192510e485dfaf2bbc5cfc6dbca69f4204d30dee30a4f9"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/joinpath"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ]
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-go-container-image:joinpath-go-alpine (alpine 3.16.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

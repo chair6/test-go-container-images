@@ -1,0 +1,51 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:hello-go-scratch",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:17aca62ddbe02012a68658a610bda1ebbea2769262dc9de7074417ee2a9f9bef",
+    "DiffIDs": [
+      "sha256:50fdae4dc3b687736f91d47c198db1ae0e1b0418fd76fa756a6eca20de32535a"
+    ],
+    "RepoTags": [
+      "test-go-container-image:hello-go-scratch",
+      "ghcr.io/chair6/test-go-container-image:hello-go-scratch"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:827590c5c7cdc649dd457cc9a52b5530bc3f4246e4c576f61c99b062fe28e42a"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-24T01:53:13.370746047Z",
+      "history": [
+        {
+          "created": "2022-10-24T01:53:13Z",
+          "created_by": "COPY /build/hello /bin/hello # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T01:53:13Z",
+          "created_by": "ENTRYPOINT [\"/bin/hello\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:50fdae4dc3b687736f91d47c198db1ae0e1b0418fd76fa756a6eca20de32535a"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/hello"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "WorkingDir": "/"
+      }
+    }
+  }
+}

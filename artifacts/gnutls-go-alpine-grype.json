@@ -1,0 +1,237 @@
+{
+ "matches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2022-2509",
+    "dataSource": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2509",
+    "namespace": "alpine:distro:alpine:3.16",
+    "severity": "High",
+    "urls": [
+     "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2509"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [
+      "3.7.7-r0"
+     ],
+     "state": "fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-2509",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-2509",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2022-2509",
+      "https://lists.gnupg.org/pipermail/gnutls-help/2022-July/004746.html",
+      "https://www.debian.org/security/2022/dsa-5203",
+      "https://lists.debian.org/debian-lts-announce/2022/08/msg00002.html",
+      "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6FL27JS3VM74YEQU7PGB62USO3KSBYZX/"
+     ],
+     "description": "A vulnerability found in gnutls. This security flaw happens because of a double free error occurs during verification of pkcs7 signatures in gnutls_pkcs7_verify function.",
+     "cvss": [
+      {
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "apk-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "alpine",
+       "version": "3.16.2"
+      },
+      "namespace": "alpine:distro:alpine:3.16",
+      "package": {
+       "name": "gnutls",
+       "version": "3.7.1-r1"
+      }
+     },
+     "found": {
+      "versionConstraint": "< 3.7.7-r0 (apk)"
+     }
+    }
+   ],
+   "artifact": {
+    "name": "gnutls",
+    "version": "3.7.1-r1",
+    "type": "apk",
+    "locations": [
+     {
+      "path": "/lib/apk/db/installed",
+      "layerID": "sha256:e542746aaa542e6fa5b8b2ea8caa680f14dd03eb02fc7df65b3c346743a82492"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "LGPL-2.1-or-later"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gnutls:gnutls:3.7.1-r1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:alpine/gnutls@3.7.1-r1?arch=x86_64&upstream=gnutls&distro=alpine-3.16.2",
+    "upstreams": [
+     {
+      "name": "gnutls"
+     }
+    ]
+   }
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "test-go-container-image:gnutls-go-alpine",
+   "imageID": "sha256:86d682ed67e6bee282bae960c82a7b4e2a2488e3ff107e02ce27e538207de883",
+   "manifestDigest": "sha256:548cbce7c0699a0b72a8f8468fe3af70c88d452e09e6eb65db4c747a19dc4a67",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "test-go-container-image:gnutls-go-alpine",
+    "ghcr.io/chair6/test-go-container-image:gnutls-go-alpine"
+   ],
+   "imageSize": 13688490,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+     "size": 5539349
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:73546f28b1fbeb866fcf5a93d6b8a25894b9da8a3f358e5ae64e491805a2889b",
+     "size": 49
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:e542746aaa542e6fa5b8b2ea8caa680f14dd03eb02fc7df65b3c346743a82492",
+     "size": 6335197
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:71db95515c02a4e4c10fa5a45c3e925dc07fff0b00074ada42a45491b6c3ac04",
+     "size": 49
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b5f9c8289efa9561a5c9552447d6d75f4964dad95e21f1d9c5cd08273db0828a",
+     "size": 1813846
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjoxNzM0LCJkaWdlc3QiOiJzaGEyNTY6ODZkNjgyZWQ2N2U2YmVlMjgyYmFlOTYwYzgyYTdiNGUyYTI0ODhlM2ZmMTA3ZTAyY2UyN2U1MzgyMDdkZTg4MyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo1ODI2NTYwLCJkaWdlc3QiOiJzaGEyNTY6OTk0MzkzZGM1OGU3OTMxODYyNTU4ZDA2ZTQ2YWEyYmIxNzQ4NzA0NGY2NzBmMzEwZGZmZTFkMjRlNGQxZWVjNyJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjMwNzIsImRpZ2VzdCI6InNoYTI1Njo3MzU0NmYyOGIxZmJlYjg2NmZjZjVhOTNkNmI4YTI1ODk0YjlkYThhM2YzNThlNWFlNjRlNDkxODA1YTI4ODliIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NjM2NDY3MiwiZGlnZXN0Ijoic2hhMjU2OmU1NDI3NDZhYWE1NDJlNmZhNWI4YjJlYThjYWE2ODBmMTRkZDAzZWIwMmZjN2RmNjViM2MzNDY3NDNhODI0OTIifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozMDcyLCJkaWdlc3QiOiJzaGEyNTY6NzFkYjk1NTE1YzAyYTRlNGMxMGZhNWE0NWMzZTkyNWRjMDdmZmYwYjAwMDc0YWRhNDJhNDU0OTFiNmMzYWMwNCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE4MTYwNjQsImRpZ2VzdCI6InNoYTI1NjpiNWY5YzgyODllZmE5NTYxYTVjOTU1MjQ0N2Q2ZDc1ZjQ5NjRkYWQ5NWUyMWYxZDljNWNkMDgyNzNkYjA4MjhhIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiRW50cnlwb2ludCI6WyIvYmluL2dudXRscyJdLCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjItMTAtMjRUMTc6NTE6NTYuNzEzNzQyMjIxWiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIyLTA4LTA5VDE3OjE5OjUzLjI3NDA2OTU4NloiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgQUREIGZpbGU6MmE5NDk2ODZkOTg4NmFjN2MxMDU4MmE2YzI5MTE2ZmQyOWQzMDc3ZDAyNzU1ZTg3ZTExMTg3MGQ2MzYwNzcyNSBpbiAvICJ9LHsiY3JlYXRlZCI6IjIwMjItMDgtMDlUMTc6MTk6NTMuNDczNzQzMzFaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBDTUQgW1wiL2Jpbi9zaFwiXSIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIyLTEwLTI0VDA1OjAzOjMwLjY0MDMwNjY3NloiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgZWNobyAnaHR0cHM6Ly9kbC1jZG4uYWxwaW5lbGludXgub3JnL2FscGluZS92My4xNS9tYWluJyBcdTAwM2UgL2V0Yy9hcGsvcmVwb3NpdG9yaWVzICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjItMTAtMjRUMDU6MDM6NDcuODI3NTk5NDJaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIGFwayBhZGQgICdnbnV0bHMnICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjItMTAtMjRUMDU6MDM6NDcuOTk2NjQxNjdaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIGVjaG8gJ2h0dHBzOi8vZGwtY2RuLmFscGluZWxpbnV4Lm9yZy9hbHBpbmUvdjMuMTYvbWFpbicgXHUwMDNlIC9ldGMvYXBrL3JlcG9zaXRvcmllcyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIyLTEwLTI0VDE3OjUxOjU2LjcxMzc0MjIyMVoiLCJjcmVhdGVkX2J5IjoiQ09QWSAvYnVpbGQvaGVsbG8gL2Jpbi9nbnV0bHMgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMi0xMC0yNFQxNzo1MTo1Ni43MTM3NDIyMjFaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL2Jpbi9nbnV0bHNcIl0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1Njo5OTQzOTNkYzU4ZTc5MzE4NjI1NThkMDZlNDZhYTJiYjE3NDg3MDQ0ZjY3MGYzMTBkZmZlMWQyNGU0ZDFlZWM3Iiwic2hhMjU2OjczNTQ2ZjI4YjFmYmViODY2ZmNmNWE5M2Q2YjhhMjU4OTRiOWRhOGEzZjM1OGU1YWU2NGU0OTE4MDVhMjg4OWIiLCJzaGEyNTY6ZTU0Mjc0NmFhYTU0MmU2ZmE1YjhiMmVhOGNhYTY4MGYxNGRkMDNlYjAyZmM3ZGY2NWIzYzM0Njc0M2E4MjQ5MiIsInNoYTI1Njo3MWRiOTU1MTVjMDJhNGU0YzEwZmE1YTQ1YzNlOTI1ZGMwN2ZmZjBiMDAwNzRhZGE0MmE0NTQ5MWI2YzNhYzA0Iiwic2hhMjU2OmI1ZjljODI4OWVmYTk1NjFhNWM5NTUyNDQ3ZDZkNzVmNDk2NGRhZDk1ZTIxZjFkOWM1Y2QwODI3M2RiMDgyOGEiXX19",
+   "repoDigests": [
+    "ghcr.io/chair6/test-go-container-image@sha256:afbff7b74d05dd43541a2618bca3bbb83cb34ed8ac685663ac745a1a883fcb81"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "alpine",
+  "version": "3.16.2",
+  "idLike": []
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.51.0",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "./artifacts/gnutls-go-alpine-grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/jsf/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   }
+  },
+  "db": {
+   "built": "2022-10-24T08:24:47Z",
+   "schemaVersion": 5,
+   "location": "/Users/jsf/Library/Caches/grype/db/5",
+   "checksum": "sha256:c5cf1925e69d72c9aed09acf6472d421d158069f645cadae81299282c979bf01",
+   "error": null
+  }
+ }
+}

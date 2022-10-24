@@ -1,0 +1,144 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:jwtgo-go-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.2"
+    },
+    "ImageID": "sha256:09eaa5731446d48949a7f9dcd8ea249d6bbc1eb44c43e697b88c23b7ea478af4",
+    "DiffIDs": [
+      "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+      "sha256:b6fbc9d47d4701822ec245f95b7454861e43c0cd49c5c33cdabbc08d90f32d72"
+    ],
+    "RepoTags": [
+      "test-go-container-image:jwtgo-go-alpine",
+      "ghcr.io/chair6/test-go-container-image:jwtgo-go-alpine"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:9be0d6b1942d2a347fce430c03fed9869f4c1a7f1cc54f80d8cf02236d59894f"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-24T03:59:47.201320882Z",
+      "history": [
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:2a949686d9886ac7c10582a6c29116fd29d3077d02755e87e111870d63607725 in / "
+        },
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-24T03:59:47Z",
+          "created_by": "COPY /build/jwtgo /bin/jwtgo # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T03:59:47Z",
+          "created_by": "ENTRYPOINT [\"/bin/jwtgo\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+          "sha256:b6fbc9d47d4701822ec245f95b7454861e43c0cd49c5c33cdabbc08d90f32d72"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/jwtgo"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ]
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-go-container-image:jwtgo-go-alpine (alpine 3.16.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    },
+    {
+      "Target": "bin/jwtgo",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2020-26160",
+          "PkgName": "github.com/dgrijalva/jwt-go",
+          "InstalledVersion": "v3.2.0+incompatible",
+          "Layer": {
+            "DiffID": "sha256:b6fbc9d47d4701822ec245f95b7454861e43c0cd49c5c33cdabbc08d90f32d72"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-26160",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Title": "jwt-go: access restriction bypass vulnerability",
+          "Description": "jwt-go before 4.0.0-preview1 allows attackers to bypass intended access restrictions in situations with []string{} for m[\"aud\"] (which is allowed by the specification). Because the type assertion fails, \"\" is the value of aud. This is a security problem if the JWT token is presented to a service that lacks its own audience check.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-862"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V2Score": 5,
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2020-26160",
+            "https://github.com/dgrijalva/jwt-go/commit/ec0a89a131e3e8567adcb21254a5cd20a70ea4ab",
+            "https://github.com/dgrijalva/jwt-go/issues/422",
+            "https://github.com/dgrijalva/jwt-go/pull/426",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-26160",
+            "https://pkg.go.dev/vuln/GO-2020-0017",
+            "https://snyk.io/vuln/SNYK-GOLANG-GITHUBCOMDGRIJALVAJWTGO-596515"
+          ],
+          "PublishedDate": "2020-09-30T18:15:00Z",
+          "LastModifiedDate": "2021-07-21T11:39:00Z"
+        },
+        {
+          "VulnerabilityID": "GHSA-w73w-5m7g-f7qc",
+          "PkgName": "github.com/dgrijalva/jwt-go",
+          "InstalledVersion": "v3.2.0+incompatible",
+          "Layer": {
+            "DiffID": "sha256:b6fbc9d47d4701822ec245f95b7454861e43c0cd49c5c33cdabbc08d90f32d72"
+          },
+          "PrimaryURL": "https://github.com/advisories/GHSA-w73w-5m7g-f7qc",
+          "DataSource": {
+            "ID": "go-vulndb",
+            "Name": "The Go Vulnerability Database",
+            "URL": "https://github.com/golang/vulndb"
+          },
+          "Description": "If a JWT contains an audience claim with an array of strings, rather\nthan a single string, and MapClaims.VerifyAudience is called with\nreq set to false, then audience verification will be bypassed,\nallowing an invalid set of audiences to be provided.\n",
+          "Severity": "UNKNOWN",
+          "References": [
+            "https://github.com/dgrijalva/jwt-go/commit/ec0a89a131e3e8567adcb21254a5cd20a70ea4ab",
+            "https://github.com/dgrijalva/jwt-go/issues/422",
+            "https://pkg.go.dev/vuln/GO-2020-0017"
+          ]
+        }
+      ]
+    }
+  ]
+}

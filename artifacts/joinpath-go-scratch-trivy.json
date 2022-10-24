@@ -1,0 +1,51 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:joinpath-go-scratch",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:285ba7d3c2f9ecd238296c686fe74dd65a0aeb248861850d63c15d9879d241da",
+    "DiffIDs": [
+      "sha256:27feb86fca0881a3b6dc32aebaf4ddc332a17600aef9d83217aa44ec685b4bd3"
+    ],
+    "RepoTags": [
+      "test-go-container-image:joinpath-go-scratch",
+      "ghcr.io/chair6/test-go-container-image:joinpath-go-scratch"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:bd4589e3fa62cc1129ef78b9a80162eea9f7329e369e70567c412086bf49fe93"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-24T01:57:22.865511843Z",
+      "history": [
+        {
+          "created": "2022-10-24T01:57:22Z",
+          "created_by": "COPY /build/joinpath /bin/joinpath # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T01:57:22Z",
+          "created_by": "ENTRYPOINT [\"/bin/joinpath\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:27feb86fca0881a3b6dc32aebaf4ddc332a17600aef9d83217aa44ec685b4bd3"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/joinpath"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "WorkingDir": "/"
+      }
+    }
+  }
+}

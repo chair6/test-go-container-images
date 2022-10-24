@@ -1,0 +1,220 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-ALPINE316-GNUTLS-2964134",
+      "title": "Double Free",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        ""
+      ],
+      "semver": {
+        "vulnerable": [
+          "<3.7.7-r0"
+        ]
+      },
+      "exploit": "Not Defined",
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "linux",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "malicious": false,
+      "references": [
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2022-2509",
+          "title": "MISC"
+        },
+        {
+          "url": "https://lists.gnupg.org/pipermail/gnutls-help/2022-July/004746.html",
+          "title": "MISC"
+        },
+        {
+          "url": "https://www.debian.org/security/2022/dsa-5203",
+          "title": "DEBIAN"
+        },
+        {
+          "url": "https://lists.debian.org/debian-lts-announce/2022/08/msg00002.html",
+          "title": "MLIST"
+        },
+        {
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6FL27JS3VM74YEQU7PGB62USO3KSBYZX/",
+          "title": "FEDORA"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-08-20T01:11:13.678266Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-08-27T11:01:39.601566Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-10-11T14:16:32.695436Z"
+        }
+      ],
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `gnutls` package._\n_See `How to fix?` for `Alpine:3.16` relevant versions._\n\nA vulnerability found in gnutls. This security flaw happens because of a double free error occurs during verification of pkcs7 signatures in gnutls_pkcs7_verify function.\n## Remediation\nUpgrade `Alpine:3.16` `gnutls` to version 3.7.7-r0 or higher.\n## References\n- [MISC](https://access.redhat.com/security/cve/CVE-2022-2509)\n- [MISC](https://lists.gnupg.org/pipermail/gnutls-help/2022-July/004746.html)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5203)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/08/msg00002.html)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6FL27JS3VM74YEQU7PGB62USO3KSBYZX/)\n",
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-2509"
+        ],
+        "CWE": [],
+        "GNUTLS": [
+          "GNUTLS-SA-2022-07-07"
+        ],
+        "ALTERNATIVE": []
+      },
+      "nvdSeverity": "high",
+      "packageName": "gnutls",
+      "creationTime": "2022-07-30T14:14:47.305987Z",
+      "disclosureTime": "2022-08-01T14:15:00Z",
+      "packageManager": "alpine:3.16",
+      "publicationTime": "2022-07-30T14:14:26.603149Z",
+      "modificationTime": "2022-08-20T01:11:13.725041Z",
+      "socialTrendAlert": false,
+      "relativeImportance": null,
+      "severityWithCritical": "high",
+      "from": [
+        "docker-image|test-go-container-image@gnutls-go-alpine",
+        "gnutls/gnutls@3.7.1-r1"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "gnutls/gnutls",
+      "version": "3.7.1-r1",
+      "nearestFixedInVersion": "3.7.7-r0"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 21,
+  "org": "chair6",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.0\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "apk",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "docker": {
+    "baseImage": "alpine:3.16.2",
+    "baseImageRemediation": {
+      "code": "NO_REMEDIATION_AVAILABLE",
+      "advice": [
+        {
+          "message": "According to our scan, you are currently using the most secure version of the selected base image",
+          "bold": true
+        }
+      ]
+    }
+  },
+  "summary": "1 vulnerable dependency path",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 1,
+  "projectName": "docker-image|test-go-container-image",
+  "platform": "linux/amd64",
+  "path": "test-go-container-image:gnutls-go-alpine"
+}

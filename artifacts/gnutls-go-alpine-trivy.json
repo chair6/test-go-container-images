@@ -1,0 +1,146 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:gnutls-go-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.2"
+    },
+    "ImageID": "sha256:86d682ed67e6bee282bae960c82a7b4e2a2488e3ff107e02ce27e538207de883",
+    "DiffIDs": [
+      "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+      "sha256:73546f28b1fbeb866fcf5a93d6b8a25894b9da8a3f358e5ae64e491805a2889b",
+      "sha256:e542746aaa542e6fa5b8b2ea8caa680f14dd03eb02fc7df65b3c346743a82492",
+      "sha256:71db95515c02a4e4c10fa5a45c3e925dc07fff0b00074ada42a45491b6c3ac04",
+      "sha256:b5f9c8289efa9561a5c9552447d6d75f4964dad95e21f1d9c5cd08273db0828a"
+    ],
+    "RepoTags": [
+      "test-go-container-image:gnutls-go-alpine",
+      "ghcr.io/chair6/test-go-container-image:gnutls-go-alpine"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:afbff7b74d05dd43541a2618bca3bbb83cb34ed8ac685663ac745a1a883fcb81"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-24T17:51:56.713742221Z",
+      "history": [
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:2a949686d9886ac7c10582a6c29116fd29d3077d02755e87e111870d63607725 in / "
+        },
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-24T05:03:30Z",
+          "created_by": "RUN /bin/sh -c echo 'https://dl-cdn.alpinelinux.org/alpine/v3.15/main' \u003e /etc/apk/repositories # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T05:03:47Z",
+          "created_by": "RUN /bin/sh -c apk add  'gnutls' # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T05:03:47Z",
+          "created_by": "RUN /bin/sh -c echo 'https://dl-cdn.alpinelinux.org/alpine/v3.16/main' \u003e /etc/apk/repositories # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T17:51:56Z",
+          "created_by": "COPY /build/hello /bin/gnutls # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T17:51:56Z",
+          "created_by": "ENTRYPOINT [\"/bin/gnutls\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+          "sha256:73546f28b1fbeb866fcf5a93d6b8a25894b9da8a3f358e5ae64e491805a2889b",
+          "sha256:e542746aaa542e6fa5b8b2ea8caa680f14dd03eb02fc7df65b3c346743a82492",
+          "sha256:71db95515c02a4e4c10fa5a45c3e925dc07fff0b00074ada42a45491b6c3ac04",
+          "sha256:b5f9c8289efa9561a5c9552447d6d75f4964dad95e21f1d9c5cd08273db0828a"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/gnutls"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ]
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-go-container-image:gnutls-go-alpine (alpine 3.16.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-2509",
+          "PkgName": "gnutls",
+          "InstalledVersion": "3.7.1-r1",
+          "FixedVersion": "3.7.7-r0",
+          "Layer": {
+            "DiffID": "sha256:e542746aaa542e6fa5b8b2ea8caa680f14dd03eb02fc7df65b3c346743a82492"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-2509",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "gnutls: Double free during gnutls_pkcs7_verify",
+          "Description": "A vulnerability found in gnutls. This security flaw happens because of a double free error occurs during verification of pkcs7 signatures in gnutls_pkcs7_verify function.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-415"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2022:6854",
+            "https://access.redhat.com/security/cve/CVE-2022-2509",
+            "https://bugzilla.redhat.com/2108977",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2509",
+            "https://errata.almalinux.org/9/ALSA-2022-6854.html",
+            "https://gnutls.org/security-new.html (GNUTLS-SA-2022-07-07)",
+            "https://gnutls.org/security-new.html#GNUTLS-SA-2022-07-07",
+            "https://linux.oracle.com/cve/CVE-2022-2509.html",
+            "https://linux.oracle.com/errata/ELSA-2022-6854.html",
+            "https://lists.debian.org/debian-lts-announce/2022/08/msg00002.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6FL27JS3VM74YEQU7PGB62USO3KSBYZX/",
+            "https://lists.gnupg.org/pipermail/gnutls-help/2022-July/004746.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-2509",
+            "https://ubuntu.com/security/notices/USN-5550-1",
+            "https://www.debian.org/security/2022/dsa-5203"
+          ],
+          "PublishedDate": "2022-08-01T14:15:00Z",
+          "LastModifiedDate": "2022-08-19T12:10:00Z"
+        }
+      ]
+    }
+  ]
+}

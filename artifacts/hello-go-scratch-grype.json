@@ -1,0 +1,125 @@
+{
+ "matches": [],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "test-go-container-image:hello-go-scratch",
+   "imageID": "sha256:17aca62ddbe02012a68658a610bda1ebbea2769262dc9de7074417ee2a9f9bef",
+   "manifestDigest": "sha256:bd0f40a635f36e22ab9847a68647645e8cd0a02cf6c6695e668bf049b5af537c",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "test-go-container-image:hello-go-scratch",
+    "ghcr.io/chair6/test-go-container-image:hello-go-scratch"
+   ],
+   "imageSize": 1813846,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:50fdae4dc3b687736f91d47c198db1ae0e1b0418fd76fa756a6eca20de32535a",
+     "size": 1813846
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo2MzAsImRpZ2VzdCI6InNoYTI1NjoxN2FjYTYyZGRiZTAyMDEyYTY4NjU4YTYxMGJkYTFlYmJlYTI3NjkyNjJkYzlkZTcwNzQ0MTdlZTJhOWY5YmVmIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjE4MTYwNjQsImRpZ2VzdCI6InNoYTI1Njo1MGZkYWU0ZGMzYjY4NzczNmY5MWQ0N2MxOThkYjFhZTBlMWIwNDE4ZmQ3NmZhNzU2YTZlY2EyMGRlMzI1MzVhIn1dfQ==",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiRW50cnlwb2ludCI6WyIvYmluL2hlbGxvIl0sIldvcmtpbmdEaXIiOiIvIiwiT25CdWlsZCI6bnVsbH0sImNyZWF0ZWQiOiIyMDIyLTEwLTI0VDAxOjUzOjEzLjM3MDc0NjA0N1oiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMi0xMC0yNFQwMTo1MzoxMy4zNzA3NDYwNDdaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL2J1aWxkL2hlbGxvIC9iaW4vaGVsbG8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMi0xMC0yNFQwMTo1MzoxMy4zNzA3NDYwNDdaIiwiY3JlYXRlZF9ieSI6IkVOVFJZUE9JTlQgW1wiL2Jpbi9oZWxsb1wiXSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9XSwib3MiOiJsaW51eCIsInJvb3RmcyI6eyJ0eXBlIjoibGF5ZXJzIiwiZGlmZl9pZHMiOlsic2hhMjU2OjUwZmRhZTRkYzNiNjg3NzM2ZjkxZDQ3YzE5OGRiMWFlMGUxYjA0MThmZDc2ZmE3NTZhNmVjYTIwZGUzMjUzNWEiXX19",
+   "repoDigests": [
+    "ghcr.io/chair6/test-go-container-image@sha256:827590c5c7cdc649dd457cc9a52b5530bc3f4246e4c576f61c99b062fe28e42a"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "",
+  "version": "",
+  "idLike": null
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.51.0",
+  "configuration": {
+   "configPath": "",
+   "output": "json",
+   "file": "./artifacts/hello-go-scratch-grype.json",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": false,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": null,
+   "exclude": [],
+   "db": {
+    "cache-dir": "/Users/jsf/Library/Caches/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": true
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "",
+    "file": ""
+   },
+   "attestation": {
+    "public-key": "",
+    "skip-verification": false
+   }
+  },
+  "db": {
+   "built": "2022-10-24T08:24:47Z",
+   "schemaVersion": 5,
+   "location": "/Users/jsf/Library/Caches/grype/db/5",
+   "checksum": "sha256:c5cf1925e69d72c9aed09acf6472d421d158069f645cadae81299282c979bf01",
+   "error": null
+  }
+ }
+}

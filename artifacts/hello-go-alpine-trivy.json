@@ -1,0 +1,72 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:hello-go-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.2"
+    },
+    "ImageID": "sha256:9655cfb7efd890bef726b9acc7a9efcaa8e62cb5008eb9f6a4320bfde6c8a65e",
+    "DiffIDs": [
+      "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+      "sha256:30e054aa453c676386e3d588ce804a1b2c8c7779eb9030883a10359d43ce8d8e"
+    ],
+    "RepoTags": [
+      "test-go-container-image:hello-go-alpine",
+      "ghcr.io/chair6/test-go-container-image:hello-go-alpine"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:5a5fb45932130c4f35d57492c9bee25152aacd4889ee4f49eeba6ea01a182e61"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-24T01:53:09.900931379Z",
+      "history": [
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:2a949686d9886ac7c10582a6c29116fd29d3077d02755e87e111870d63607725 in / "
+        },
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-24T01:53:09Z",
+          "created_by": "COPY /build/hello /bin/hello # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T01:53:09Z",
+          "created_by": "ENTRYPOINT [\"/bin/hello\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+          "sha256:30e054aa453c676386e3d588ce804a1b2c8c7779eb9030883a10359d43ce8d8e"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/hello"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ]
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-go-container-image:hello-go-alpine (alpine 3.16.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}
