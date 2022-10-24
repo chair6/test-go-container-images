@@ -35,30 +35,6 @@
 				},
 				{
 					"type": "os",
-					"name": "openssl",
-					"version": "1.1.1q-r0",
-					"licenses": [
-						"OpenSSL"
-					]
-				},
-				{
-					"type": "os",
-					"name": "ca-certificates",
-					"version": "20220614-r0",
-					"licenses": [
-						"MPL-2.0 AND MIT"
-					]
-				},
-				{
-					"type": "os",
-					"name": "alpine-baselayout",
-					"version": "3.2.0-r22",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
 					"name": "musl",
 					"version": "1.2.3-r0",
 					"licenses": [
@@ -77,6 +53,30 @@
 					"type": "os",
 					"name": "busybox",
 					"version": "1.35.0-r17",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "openssl",
+					"version": "1.1.1q-r0",
+					"licenses": [
+						"OpenSSL"
+					]
+				},
+				{
+					"type": "os",
+					"name": "ca-certificates",
+					"version": "20220614-r0",
+					"licenses": [
+						"MPL-2.0 AND MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "alpine-baselayout",
+					"version": "3.2.0-r22",
 					"licenses": [
 						"GPL-2.0-only"
 					]
@@ -144,8 +144,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/jwtgo\"]"
 				}
 			],
-			"scanTime": "2022-10-24T18:08:56.789538Z",
-			"scanID": "6356d4b8dc7f0e4d88637233"
+			"scanTime": "2022-10-24T22:52:59.326441Z",
+			"scanID": "6357174b97b70187490cec74"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ab06be11978c6fd66defbea57c14cbdca8485b6578fb38e7f47d477885e356478"

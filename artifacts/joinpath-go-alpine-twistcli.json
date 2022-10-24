@@ -138,8 +138,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/joinpath\"]"
 				}
 			],
-			"scanTime": "2022-10-24T18:08:18.118592Z",
-			"scanID": "6356d49283b501822255d327"
+			"scanTime": "2022-10-24T22:52:19.918097Z",
+			"scanID": "6357172356a8798ee98ee562"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ac7c8a10ccbc18d9546574d0317a135fd083f59c53d51431d3ad9c49b30bf2ae7"

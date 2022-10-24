@@ -1,0 +1,156 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:hello-go-chainguard",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.17_alpha20220809"
+    },
+    "ImageID": "sha256:a1a8ce51d842009948b1d5e495228abc29fedccc8250d332ecbee05e544ab9af",
+    "DiffIDs": [
+      "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63",
+      "sha256:5e2ae4694412d4c32f3730b8a0ebf4a600474267785a6989fed6c42707cc3fcb"
+    ],
+    "RepoTags": [
+      "test-go-container-image:hello-go-chainguard",
+      "ghcr.io/chair6/test-go-container-image:hello-go-chainguard"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:c1dd47489f8f464606f11844aedefb85785b85aa3ce3d14041bb0d959fa7c303"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "author": "github.com/chainguard-dev/apko",
+      "created": "2022-10-24T22:40:46.44549297Z",
+      "history": [
+        {
+          "created": "2022-10-24T01:27:07Z",
+          "created_by": "apko",
+          "comment": "This is an apko single-layer image"
+        },
+        {
+          "created": "2022-10-24T22:40:46Z",
+          "created_by": "COPY /build/hello /bin/hello # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-24T22:40:46Z",
+          "created_by": "ENTRYPOINT [\"/bin/hello\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63",
+          "sha256:5e2ae4694412d4c32f3730b8a0ebf4a600474267785a6989fed6c42707cc3fcb"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/hello"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+        ]
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-go-container-image:hello-go-chainguard (alpine 3.17_alpha20220809)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2022-3358",
+          "PkgName": "libcrypto3",
+          "InstalledVersion": "3.0.5-r3",
+          "FixedVersion": "3.0.6-r0",
+          "Layer": {
+            "DiffID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3358",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Using a Custom Cipher with NID_undef may lead to NULL encryption",
+          "Description": "OpenSSL supports creating a custom cipher via the legacy EVP_CIPHER_meth_new() function and associated function calls. This function was deprecated in OpenSSL 3.0 and application authors are instead encouraged to use the new provider mechanism in order to implement custom ciphers. OpenSSL versions 3.0.0 to 3.0.5 incorrectly handle legacy custom ciphers passed to the EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() and EVP_CipherInit_ex2() functions (as well as other similarly named encryption and decryption initialisation functions). Instead of using the custom cipher directly it incorrectly tries to fetch an equivalent cipher from the available providers. An equivalent cipher is found based on the NID passed to EVP_CIPHER_meth_new(). This NID is supposed to represent the unique NID for a given cipher. However it is possible for an application to incorrectly pass NID_undef as this value in the call to EVP_CIPHER_meth_new(). When NID_undef is used in this way the OpenSSL encryption/decryption initialisation function will match the NULL cipher as being equivalent and will fetch this from the available providers. This will succeed if the default provider has been loaded (or if a third party provider has been loaded that offers this cipher). Using the NULL cipher means that the plaintext is emitted as the ciphertext. Applications are only affected by this issue if they call EVP_CIPHER_meth_new() using NID_undef and subsequently use it in a call to an encryption/decryption initialisation function. Applications that only use SSL/TLS are not impacted by this issue. Fixed in OpenSSL 3.0.6 (Affected 3.0.0-3.0.5).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3358",
+            "https://crates.io/crates/openssl-src",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3358",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=5485c56679d7c49b96e8fc8ca708b0b7e7c03c4b",
+            "https://rustsec.org/advisories/RUSTSEC-2022-0059.html",
+            "https://www.openssl.org/news/secadv/20221011.txt"
+          ],
+          "PublishedDate": "2022-10-11T15:15:00Z",
+          "LastModifiedDate": "2022-10-13T16:00:00Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-3358",
+          "PkgName": "libssl3",
+          "InstalledVersion": "3.0.5-r3",
+          "FixedVersion": "3.0.6-r0",
+          "Layer": {
+            "DiffID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3358",
+          "DataSource": {
+            "ID": "alpine",
+            "Name": "Alpine Secdb",
+            "URL": "https://secdb.alpinelinux.org/"
+          },
+          "Title": "openssl: Using a Custom Cipher with NID_undef may lead to NULL encryption",
+          "Description": "OpenSSL supports creating a custom cipher via the legacy EVP_CIPHER_meth_new() function and associated function calls. This function was deprecated in OpenSSL 3.0 and application authors are instead encouraged to use the new provider mechanism in order to implement custom ciphers. OpenSSL versions 3.0.0 to 3.0.5 incorrectly handle legacy custom ciphers passed to the EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() and EVP_CipherInit_ex2() functions (as well as other similarly named encryption and decryption initialisation functions). Instead of using the custom cipher directly it incorrectly tries to fetch an equivalent cipher from the available providers. An equivalent cipher is found based on the NID passed to EVP_CIPHER_meth_new(). This NID is supposed to represent the unique NID for a given cipher. However it is possible for an application to incorrectly pass NID_undef as this value in the call to EVP_CIPHER_meth_new(). When NID_undef is used in this way the OpenSSL encryption/decryption initialisation function will match the NULL cipher as being equivalent and will fetch this from the available providers. This will succeed if the default provider has been loaded (or if a third party provider has been loaded that offers this cipher). Using the NULL cipher means that the plaintext is emitted as the ciphertext. Applications are only affected by this issue if they call EVP_CIPHER_meth_new() using NID_undef and subsequently use it in a call to an encryption/decryption initialisation function. Applications that only use SSL/TLS are not impacted by this issue. Fixed in OpenSSL 3.0.6 (Affected 3.0.0-3.0.5).",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2022-3358",
+            "https://crates.io/crates/openssl-src",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3358",
+            "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=5485c56679d7c49b96e8fc8ca708b0b7e7c03c4b",
+            "https://rustsec.org/advisories/RUSTSEC-2022-0059.html",
+            "https://www.openssl.org/news/secadv/20221011.txt"
+          ],
+          "PublishedDate": "2022-10-11T15:15:00Z",
+          "LastModifiedDate": "2022-10-13T16:00:00Z"
+        }
+      ]
+    }
+  ]
+}
