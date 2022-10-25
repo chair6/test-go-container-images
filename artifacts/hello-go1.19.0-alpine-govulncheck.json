@@ -1,0 +1,14 @@
+{
+	"Calls": null,
+	"Imports": null,
+	"Requires": null,
+	"Vulns": null,
+	"Modules": [
+		{
+			"Path": "stdlib",
+			"Version": "v1.19.0",
+			"Dir": "",
+			"Replace": null
+		}
+	]
+}

@@ -1,8 +1,8 @@
 {
 	"results": [
 		{
-			"id": "sha256:624e19ee611bc9e4a07f83ec13fb9658ece764d51db0d2dce6067117bfb6e36f",
-			"name": "test-go-container-image:joinpath-go1.19.0-alpine",
+			"id": "sha256:cfea483a53b776ff2c69bcac0b451a72fbe07c13e32bb41ae825b51586ec077c",
+			"name": "test-go-container-image:hello-go1.19.0-alpine",
 			"distro": "Alpine Linux v3.16",
 			"distroRelease": "3.16.2",
 			"collections": [
@@ -35,30 +35,6 @@
 				},
 				{
 					"type": "os",
-					"name": "openssl",
-					"version": "1.1.1q-r0",
-					"licenses": [
-						"OpenSSL"
-					]
-				},
-				{
-					"type": "os",
-					"name": "ca-certificates",
-					"version": "20220614-r0",
-					"licenses": [
-						"MPL-2.0 AND MIT"
-					]
-				},
-				{
-					"type": "os",
-					"name": "alpine-baselayout",
-					"version": "3.2.0-r22",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
 					"name": "musl",
 					"version": "1.2.3-r0",
 					"licenses": [
@@ -80,6 +56,30 @@
 					"licenses": [
 						"GPL-2.0-only"
 					]
+				},
+				{
+					"type": "os",
+					"name": "openssl",
+					"version": "1.1.1q-r0",
+					"licenses": [
+						"OpenSSL"
+					]
+				},
+				{
+					"type": "os",
+					"name": "ca-certificates",
+					"version": "20220614-r0",
+					"licenses": [
+						"MPL-2.0 AND MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "alpine-baselayout",
+					"version": "3.2.0-r22",
+					"licenses": [
+						"GPL-2.0-only"
+					]
 				}
 			],
 			"applications": [
@@ -91,7 +91,7 @@
 				{
 					"name": "go",
 					"version": "1.19",
-					"path": "/bin/joinpath"
+					"path": "/bin/hello"
 				}
 			],
 			"compliances": [
@@ -136,7 +136,7 @@
 						"\u003e=1.19.0,1.19"
 					],
 					"publishedDate": "2022-10-14T08:16:00-07:00",
-					"discoveredDate": "2022-10-25T09:14:43-07:00",
+					"discoveredDate": "2022-10-25T09:13:55-07:00",
 					"fixDate": "2022-10-14T08:16:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -162,7 +162,7 @@
 						"\u003e=1.19.0,1.19"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-25T09:14:43-07:00",
+					"discoveredDate": "2022-10-25T09:13:55-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -188,7 +188,7 @@
 						"\u003e=1.19.0,1.19"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-25T09:14:43-07:00",
+					"discoveredDate": "2022-10-25T09:13:55-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -214,7 +214,7 @@
 						"==1.19.0"
 					],
 					"publishedDate": "2022-09-06T11:15:00-07:00",
-					"discoveredDate": "2022-10-25T09:14:43-07:00",
+					"discoveredDate": "2022-10-25T09:13:55-07:00",
 					"fixDate": "2022-09-06T11:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				}
@@ -237,17 +237,17 @@
 					"instruction": "CMD [\"/bin/sh\"]"
 				},
 				{
-					"created": "2022-10-24T09:23:52-07:00",
-					"instruction": "COPY /build/joinpath /bin/joinpath # buildkit"
+					"created": "2022-10-25T09:11:46-07:00",
+					"instruction": "COPY /build/hello /bin/hello # buildkit"
 				},
 				{
-					"created": "2022-10-24T09:23:52-07:00",
-					"instruction": "ENTRYPOINT [\"/bin/joinpath\"]"
+					"created": "2022-10-25T09:11:46-07:00",
+					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T16:14:46.308974Z",
-			"scanID": "63580b76be0a6016473c9ee9"
+			"scanTime": "2022-10-25T16:13:58.137556Z",
+			"scanID": "63580b465f1b364375375909"
 		}
 	],
-	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A624e19ee611bc9e4a07f83ec13fb9658ece764d51db0d2dce6067117bfb6e36f"
+	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Acfea483a53b776ff2c69bcac0b451a72fbe07c13e32bb41ae825b51586ec077c"
 }

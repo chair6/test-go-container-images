@@ -124,16 +124,16 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30580",
 					"riskFactors": [
+						"High severity",
 						"Recent vulnerability",
 						"Attack complexity: low",
-						"Has fix",
-						"High severity"
+						"Has fix"
 					],
 					"impactedVersions": [
 						"\u003c1.17.11"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -148,18 +148,18 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-41715",
 					"riskFactors": [
+						"Recent vulnerability",
 						"Attack complexity: low",
 						"Attack vector: network",
 						"DoS",
 						"Has fix",
-						"High severity",
-						"Recent vulnerability"
+						"High severity"
 					],
 					"impactedVersions": [
 						"\u003c1.18.7"
 					],
 					"publishedDate": "2022-10-14T08:16:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-10-14T08:16:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -174,18 +174,18 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-32189",
 					"riskFactors": [
-						"DoS",
 						"Has fix",
 						"High severity",
 						"Recent vulnerability",
 						"Attack complexity: low",
-						"Attack vector: network"
+						"Attack vector: network",
+						"DoS"
 					],
 					"impactedVersions": [
 						"\u003c1.17.13"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -200,17 +200,17 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30635",
 					"riskFactors": [
-						"High severity",
-						"Recent vulnerability",
 						"Attack complexity: low",
 						"Attack vector: network",
-						"Has fix"
+						"Has fix",
+						"High severity",
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -225,17 +225,17 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30633",
 					"riskFactors": [
+						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability",
-						"Attack complexity: low"
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -260,7 +260,7 @@
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -275,17 +275,17 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30631",
 					"riskFactors": [
-						"Attack vector: network",
-						"Has fix",
 						"High severity",
 						"Recent vulnerability",
-						"Attack complexity: low"
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Has fix"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -310,7 +310,7 @@
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -325,17 +325,17 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2880",
 					"riskFactors": [
+						"Recent vulnerability",
+						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
-						"High severity",
-						"Recent vulnerability",
-						"Attack complexity: low"
+						"High severity"
 					],
 					"impactedVersions": [
 						"\u003c1.18.7"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -360,7 +360,7 @@
 						"\u003c1.18.7"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -385,7 +385,7 @@
 						"\u003c1.17.9"
 					],
 					"publishedDate": "2022-04-20T03:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-04-20T03:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -410,7 +410,7 @@
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -425,18 +425,18 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
 					"riskFactors": [
-						"High severity",
 						"Recent vulnerability",
 						"Attack complexity: low",
 						"Attack vector: network",
 						"DoS",
-						"Has fix"
+						"Has fix",
+						"High severity"
 					],
 					"impactedVersions": [
 						"\u003c1.18.6"
 					],
 					"publishedDate": "2022-09-06T11:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-09-06T11:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -451,17 +451,17 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24675",
 					"riskFactors": [
-						"Attack vector: network",
 						"Has fix",
 						"High severity",
 						"Recent vulnerability",
-						"Attack complexity: low"
+						"Attack complexity: low",
+						"Attack vector: network"
 					],
 					"impactedVersions": [
 						"\u003c1.17.9"
 					],
 					"publishedDate": "2022-04-20T03:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-04-20T03:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -486,7 +486,7 @@
 						"\u003c1.17"
 					],
 					"publishedDate": "2021-08-07T10:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2021-08-07T10:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -501,17 +501,17 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-32148",
 					"riskFactors": [
+						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
 						"Medium severity",
-						"Recent vulnerability",
-						"Attack complexity: low"
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -526,17 +526,17 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-1705",
 					"riskFactors": [
-						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
 						"Medium severity",
-						"Recent vulnerability"
+						"Recent vulnerability",
+						"Attack complexity: low"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -551,16 +551,16 @@
 					"packageVersion": "1.16.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-1962",
 					"riskFactors": [
+						"Recent vulnerability",
 						"Attack complexity: low",
 						"Has fix",
-						"Medium severity",
-						"Recent vulnerability"
+						"Medium severity"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -583,7 +583,7 @@
 						"\u003c1.17.11"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-25T08:56:54-07:00",
+					"discoveredDate": "2022-10-25T09:13:30-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				}
@@ -614,8 +614,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T15:56:56.901103Z",
-			"scanID": "635807488d22c01eec76d944"
+			"scanTime": "2022-10-25T16:13:33.823351Z",
+			"scanID": "63580b2d4f5fa91455798b3d"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Abb710bb28b55df018ef45fdc4514cf4c1dda0f747962b7feedee54b46b316412"

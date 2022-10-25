@@ -35,14 +35,6 @@
 				},
 				{
 					"type": "os",
-					"name": "alpine-baselayout",
-					"version": "3.2.0-r22",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
 					"name": "musl",
 					"version": "1.2.3-r0",
 					"licenses": [
@@ -79,6 +71,14 @@
 					"version": "20220614-r0",
 					"licenses": [
 						"MPL-2.0 AND MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "alpine-baselayout",
+					"version": "3.2.0-r22",
+					"licenses": [
+						"GPL-2.0-only"
 					]
 				}
 			],
@@ -138,8 +138,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T15:56:03.763102Z",
-			"scanID": "63580713c13d8f9b0f229d84"
+			"scanTime": "2022-10-25T16:12:34.375448Z",
+			"scanID": "63580af285bb8919993150d6"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ad70fa69d4f64ad8367d1bfaf86ba29b8d9191de5401a738007147e1b97fe40b9"

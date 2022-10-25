@@ -35,22 +35,6 @@
 				},
 				{
 					"type": "os",
-					"name": "musl",
-					"version": "1.2.3-r0",
-					"licenses": [
-						"MIT"
-					]
-				},
-				{
-					"type": "os",
-					"name": "pax-utils",
-					"version": "1.3.4-r0",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
 					"name": "busybox",
 					"version": "1.35.0-r17",
 					"licenses": [
@@ -77,6 +61,22 @@
 					"type": "os",
 					"name": "alpine-baselayout",
 					"version": "3.2.0-r22",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "musl",
+					"version": "1.2.3-r0",
+					"licenses": [
+						"MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "pax-utils",
+					"version": "1.3.4-r0",
 					"licenses": [
 						"GPL-2.0-only"
 					]
@@ -138,8 +138,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/joinpath\"]"
 				}
 			],
-			"scanTime": "2022-10-25T15:57:42.176242Z",
-			"scanID": "63580776241e287e4e9d140d"
+			"scanTime": "2022-10-25T16:14:22.912061Z",
+			"scanID": "63580b5e3b0af5b04b2cb6db"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ac7c8a10ccbc18d9546574d0317a135fd083f59c53d51431d3ad9c49b30bf2ae7"
