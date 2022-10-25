@@ -30,6 +30,14 @@ Tests a scanner's ability to complete a clean baseline scan against a benign Go 
 
 Scanners should probably not be identifying any vulnerabilities.
 
+### hello2-*
+
+Same as above, but with 2 copies of the benign Go binary.
+
+Tests a scanner's behavior regarding duplication of content / issues.
+
+Scanners may report a varying number of vulnerabilities, depending on how they handle this.
+
 ### gnutls-*
 
 "Hello world" Go binary with no known vulnerabilities, as above.

@@ -1,0 +1,13 @@
+FROM golang:1.15.15-alpine AS builder
+
+LABEL org.opencontainers.image.source=https://github.com/chair6/test-go-container-images
+
+WORKDIR /build
+
+COPY ./src/hello/* /build/
+RUN go build -o hello hello.go
+
+FROM alpine:latest
+COPY --from=builder /build/hello /bin/hello
+COPY --from=builder /build/hello /bin/hello2
+ENTRYPOINT ["/bin/hello"]
