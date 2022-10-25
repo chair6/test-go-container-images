@@ -1,8 +1,8 @@
 {
 	"results": [
 		{
-			"id": "sha256:b06be11978c6fd66defbea57c14cbdca8485b6578fb38e7f47d477885e356478",
-			"name": "test-go-container-image:jwtgo-go-alpine",
+			"id": "sha256:384e3ebf181c9a4ef1f127db4113253cb0ed998d676228b9a2c796ce1c0a4d43",
+			"name": "test-go-container-image:dockersdk-go-alpine",
 			"distro": "Alpine Linux v3.16",
 			"distroRelease": "3.16.2",
 			"collections": [
@@ -31,6 +31,22 @@
 					"version": "2.4-r1",
 					"licenses": [
 						"MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "pax-utils",
+					"version": "1.3.4-r0",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "busybox",
+					"version": "1.35.0-r17",
+					"licenses": [
+						"GPL-2.0-only"
 					]
 				},
 				{
@@ -66,26 +82,40 @@
 					]
 				},
 				{
-					"type": "os",
-					"name": "pax-utils",
-					"version": "1.3.4-r0",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
-					"name": "busybox",
-					"version": "1.35.0-r17",
-					"licenses": [
-						"GPL-2.0-only"
-					]
+					"type": "go",
+					"name": "github.com/docker/docker",
+					"version": "v20.10.10",
+					"path": "/bin/dockersdk"
 				},
 				{
 					"type": "go",
-					"name": "github.com/dgrijalva/jwt-go",
-					"version": "v3.2.0",
-					"path": "/bin/jwtgo"
+					"name": "github.com/docker/go-connections",
+					"version": "v0.4.0",
+					"path": "/bin/dockersdk"
+				},
+				{
+					"type": "go",
+					"name": "github.com/docker/go-units",
+					"version": "v0.5.0",
+					"path": "/bin/dockersdk"
+				},
+				{
+					"type": "go",
+					"name": "github.com/gogo/protobuf",
+					"version": "v1.3.2",
+					"path": "/bin/dockersdk"
+				},
+				{
+					"type": "go",
+					"name": "github.com/opencontainers/go-digest",
+					"version": "v1.0.0",
+					"path": "/bin/dockersdk"
+				},
+				{
+					"type": "go",
+					"name": "github.com/opencontainers/image-spec",
+					"version": "v1.0.2",
+					"path": "/bin/dockersdk"
 				}
 			],
 			"applications": [
@@ -97,7 +127,7 @@
 				{
 					"name": "go",
 					"version": "1.19.2",
-					"path": "/bin/jwtgo"
+					"path": "/bin/dockersdk"
 				}
 			],
 			"compliances": [
@@ -136,17 +166,17 @@
 					"instruction": "CMD [\"/bin/sh\"]"
 				},
 				{
-					"created": "2022-10-24T09:23:58-07:00",
-					"instruction": "COPY /build/jwtgo /bin/jwtgo # buildkit"
+					"created": "2022-10-24T20:17:22-07:00",
+					"instruction": "COPY /build/dockersdk /bin/dockersdk # buildkit"
 				},
 				{
-					"created": "2022-10-24T09:23:58-07:00",
-					"instruction": "ENTRYPOINT [\"/bin/jwtgo\"]"
+					"created": "2022-10-24T20:17:22-07:00",
+					"instruction": "ENTRYPOINT [\"/bin/dockersdk\"]"
 				}
 			],
-			"scanTime": "2022-10-25T03:21:15.414749Z",
-			"scanID": "6357562b6e3ac8c8f3c84779"
+			"scanTime": "2022-10-25T03:18:31.667588Z",
+			"scanID": "635755874b74923f8823518b"
 		}
 	],
-	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ab06be11978c6fd66defbea57c14cbdca8485b6578fb38e7f47d477885e356478"
+	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A384e3ebf181c9a4ef1f127db4113253cb0ed998d676228b9a2c796ce1c0a4d43"
 }

@@ -1,0 +1,72 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:dockersdk-go-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.2"
+    },
+    "ImageID": "sha256:8d3fd1f0a0f91e450d3de886d7a6d7eb552346933fc9934509e490323bc9ba99",
+    "DiffIDs": [
+      "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+      "sha256:9c1ec45e83449f4c26c9be3a1766147ebabfbbbeec8c2a2d7af1399a993e7aeb"
+    ],
+    "RepoTags": [
+      "test-go-container-image:dockersdk-go-alpine",
+      "ghcr.io/chair6/test-go-container-image:dockersdk-go-alpine"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:f930c2edb936c196508899231109bc6e6941e8699a3ae7366b4644ad05593b89"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-25T03:12:11.0630315Z",
+      "history": [
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:2a949686d9886ac7c10582a6c29116fd29d3077d02755e87e111870d63607725 in / "
+        },
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-25T03:12:11Z",
+          "created_by": "COPY /build/dockersdk /bin/dockersdk # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-25T03:12:11Z",
+          "created_by": "ENTRYPOINT [\"/bin/dockersdk\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+          "sha256:9c1ec45e83449f4c26c9be3a1766147ebabfbbbeec8c2a2d7af1399a993e7aeb"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/dockersdk"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ]
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-go-container-image:dockersdk-go-alpine (alpine 3.16.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

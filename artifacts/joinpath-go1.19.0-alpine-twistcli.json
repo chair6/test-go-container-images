@@ -35,6 +35,14 @@
 				},
 				{
 					"type": "os",
+					"name": "alpine-baselayout",
+					"version": "3.2.0-r22",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
 					"name": "musl",
 					"version": "1.2.3-r0",
 					"licenses": [
@@ -71,14 +79,6 @@
 					"version": "20220614-r0",
 					"licenses": [
 						"MPL-2.0 AND MIT"
-					]
-				},
-				{
-					"type": "os",
-					"name": "alpine-baselayout",
-					"version": "3.2.0-r22",
-					"licenses": [
-						"GPL-2.0-only"
 					]
 				}
 			],
@@ -124,19 +124,19 @@
 					"packageVersion": "1.19",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-41715",
 					"riskFactors": [
+						"Attack vector: network",
+						"DoS",
 						"Has fix",
 						"High severity",
 						"Recent vulnerability",
-						"Attack complexity: low",
-						"Attack vector: network",
-						"DoS"
+						"Attack complexity: low"
 					],
 					"impactedVersions": [
 						"\u003c1.19.2,1.19",
 						"\u003e=1.19.0,1.19"
 					],
 					"publishedDate": "2022-10-14T08:16:00-07:00",
-					"discoveredDate": "2022-10-24T17:08:34-07:00",
+					"discoveredDate": "2022-10-24T20:20:58-07:00",
 					"fixDate": "2022-10-14T08:16:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -162,7 +162,7 @@
 						"\u003e=1.19.0,1.19"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:08:34-07:00",
+					"discoveredDate": "2022-10-24T20:20:58-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -177,18 +177,18 @@
 					"packageVersion": "1.19",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2879",
 					"riskFactors": [
+						"Attack complexity: low",
+						"Attack vector: network",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability",
-						"Attack complexity: low",
-						"Attack vector: network"
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.19.2,1.19",
 						"\u003e=1.19.0,1.19"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:08:34-07:00",
+					"discoveredDate": "2022-10-24T20:20:58-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -203,18 +203,18 @@
 					"packageVersion": "1.19",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
 					"riskFactors": [
-						"Attack complexity: low",
-						"Attack vector: network",
-						"DoS",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability"
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network",
+						"DoS"
 					],
 					"impactedVersions": [
 						"==1.19.0"
 					],
 					"publishedDate": "2022-09-06T11:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:08:34-07:00",
+					"discoveredDate": "2022-10-24T20:20:58-07:00",
 					"fixDate": "2022-09-06T11:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				}
@@ -245,8 +245,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/joinpath\"]"
 				}
 			],
-			"scanTime": "2022-10-25T00:08:37.521965Z",
-			"scanID": "6357290519d52260914cc54a"
+			"scanTime": "2022-10-25T03:21:01.415721Z",
+			"scanID": "6357561de6c570d26f7f9d69"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A624e19ee611bc9e4a07f83ec13fb9658ece764d51db0d2dce6067117bfb6e36f"

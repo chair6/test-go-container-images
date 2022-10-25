@@ -1,7 +1,7 @@
 {
 	"results": [
 		{
-			"id": "sha256:56da6aeed782a7929b13256f3aa9080270e830f0c801dfd4836791419536fb7b",
+			"id": "sha256:c62d89581f41adacaec5c6e116931780a94fea3565f39a9c164047443bb46721",
 			"name": "test-go-container-image:hello-go-chainguard",
 			"distro": "Alpine Linux edge",
 			"distroRelease": "3.17_alpha20220809",
@@ -35,6 +35,30 @@
 				},
 				{
 					"type": "os",
+					"name": "ca-certificates",
+					"version": "20220614-r2",
+					"licenses": [
+						"MPL-2.0 AND MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "alpine-base",
+					"version": "3.17_alpha20220809-r4",
+					"licenses": [
+						"MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "alpine-baselayout",
+					"version": "3.3.0-r3",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
 					"name": "musl",
 					"version": "1.2.3-r1",
 					"licenses": [
@@ -63,30 +87,6 @@
 					"version": "3.0.5-r3",
 					"licenses": [
 						"Apache-2.0"
-					]
-				},
-				{
-					"type": "os",
-					"name": "ca-certificates",
-					"version": "20220614-r2",
-					"licenses": [
-						"MPL-2.0 AND MIT"
-					]
-				},
-				{
-					"type": "os",
-					"name": "alpine-base",
-					"version": "3.17_alpha20220809-r4",
-					"licenses": [
-						"MIT"
-					]
-				},
-				{
-					"type": "os",
-					"name": "alpine-baselayout",
-					"version": "3.3.0-r3",
-					"licenses": [
-						"GPL-2.0-only"
 					]
 				}
 			],
@@ -130,21 +130,21 @@
 			"vulnerabilityScanPassed": true,
 			"history": [
 				{
-					"created": "2022-10-23T18:27:07-07:00",
+					"created": "2022-10-24T18:22:19-07:00",
 					"instruction": "RUN apko"
 				},
 				{
-					"created": "2022-10-24T15:47:31-07:00",
+					"created": "2022-10-24T20:17:55-07:00",
 					"instruction": "COPY /build/hello /bin/hello # buildkit"
 				},
 				{
-					"created": "2022-10-24T15:47:31-07:00",
+					"created": "2022-10-24T20:17:55-07:00",
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T00:07:03.876216Z",
-			"scanID": "635728a7e6eac88c7dfd93d9"
+			"scanTime": "2022-10-25T03:19:11.549116Z",
+			"scanID": "635755af78686353e5126fb0"
 		}
 	],
-	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A56da6aeed782a7929b13256f3aa9080270e830f0c801dfd4836791419536fb7b"
+	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ac62d89581f41adacaec5c6e116931780a94fea3565f39a9c164047443bb46721"
 }

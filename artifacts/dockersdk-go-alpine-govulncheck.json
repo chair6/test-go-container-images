@@ -1,0 +1,50 @@
+{
+	"Calls": null,
+	"Imports": null,
+	"Requires": null,
+	"Vulns": null,
+	"Modules": [
+		{
+			"Path": "github.com/docker/docker",
+			"Version": "v20.10.10+incompatible",
+			"Dir": "",
+			"Replace": null
+		},
+		{
+			"Path": "github.com/docker/go-connections",
+			"Version": "v0.4.0",
+			"Dir": "",
+			"Replace": null
+		},
+		{
+			"Path": "github.com/docker/go-units",
+			"Version": "v0.5.0",
+			"Dir": "",
+			"Replace": null
+		},
+		{
+			"Path": "github.com/gogo/protobuf",
+			"Version": "v1.3.2",
+			"Dir": "",
+			"Replace": null
+		},
+		{
+			"Path": "github.com/opencontainers/go-digest",
+			"Version": "v1.0.0",
+			"Dir": "",
+			"Replace": null
+		},
+		{
+			"Path": "github.com/opencontainers/image-spec",
+			"Version": "v1.0.2",
+			"Dir": "",
+			"Replace": null
+		},
+		{
+			"Path": "stdlib",
+			"Version": "v1.19.2",
+			"Dir": "",
+			"Replace": null
+		}
+	]
+}

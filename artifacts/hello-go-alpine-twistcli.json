@@ -35,22 +35,6 @@
 				},
 				{
 					"type": "os",
-					"name": "openssl",
-					"version": "1.1.1q-r0",
-					"licenses": [
-						"OpenSSL"
-					]
-				},
-				{
-					"type": "os",
-					"name": "ca-certificates",
-					"version": "20220614-r0",
-					"licenses": [
-						"MPL-2.0 AND MIT"
-					]
-				},
-				{
-					"type": "os",
 					"name": "alpine-baselayout",
 					"version": "3.2.0-r22",
 					"licenses": [
@@ -79,6 +63,22 @@
 					"version": "1.35.0-r17",
 					"licenses": [
 						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "openssl",
+					"version": "1.1.1q-r0",
+					"licenses": [
+						"OpenSSL"
+					]
+				},
+				{
+					"type": "os",
+					"name": "ca-certificates",
+					"version": "20220614-r0",
+					"licenses": [
+						"MPL-2.0 AND MIT"
 					]
 				}
 			],
@@ -138,8 +138,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T00:06:42.514191Z",
-			"scanID": "6357289266186d962c205702"
+			"scanTime": "2022-10-25T03:18:58.547854Z",
+			"scanID": "635755a208b019e189a05ded"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ad70fa69d4f64ad8367d1bfaf86ba29b8d9191de5401a738007147e1b97fe40b9"

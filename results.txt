@@ -1,5 +1,6 @@
 image                                               trivy    grype    docker    govulncheck    twistcli
 ------------------------------------------------  -------  -------  --------  -------------  ----------
+test-go-container-image:dockersdk-go-alpine             0        0         0              0           0
 test-go-container-image:gnutls-go-alpine                1        1         1              0           1
 test-go-container-image:hello-go-alpine                 0        0         0              0           0
 test-go-container-image:hello-go-chainguard             2        4         0              0           0
