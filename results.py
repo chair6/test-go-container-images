@@ -10,6 +10,7 @@ results = []
 
 for f in sorted(os.listdir('./images')):
     target = '.'.join(f.split('.')[1:])
+    print('parsing output for image {}...'.format(target))
 
     trivy_count = 0
     with open('./artifacts/{}-trivy.json'.format(target), 'r') as fin:

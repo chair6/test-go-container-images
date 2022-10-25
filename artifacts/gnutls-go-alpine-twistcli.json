@@ -180,17 +180,17 @@
 					"packageVersion": "3.7.1-r1",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2509",
 					"riskFactors": [
+						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability",
-						"Attack complexity: low"
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c3.7.7-r0"
 					],
 					"publishedDate": "2022-08-01T07:15:00-07:00",
-					"discoveredDate": "2022-10-24T15:50:55-07:00",
+					"discoveredDate": "2022-10-24T17:06:25-07:00",
 					"fixDate": "2022-08-01T07:15:00-07:00",
 					"layerTime": "2022-10-24T09:23:24-07:00"
 				}
@@ -233,8 +233,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/gnutls\"]"
 				}
 			],
-			"scanTime": "2022-10-24T22:50:58.627336Z",
-			"scanID": "635716d2e168f007b2641d3b"
+			"scanTime": "2022-10-25T00:06:28.14704Z",
+			"scanID": "635728842d0696b6e13d9707"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ae321e111ce381080b52459556fb1bd6dc431311668fbfd5e0897b8f109b4e0b7"

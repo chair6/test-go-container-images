@@ -1,8 +1,8 @@
 {
 	"results": [
 		{
-			"id": "sha256:bb710bb28b55df018ef45fdc4514cf4c1dda0f747962b7feedee54b46b316412",
-			"name": "test-go-container-image:hello-go1.16.15-alpine",
+			"id": "sha256:581da378f2dea50b5efecc6d4008db5a2cee7fb856d75f808b2cfbcfbb23c89c",
+			"name": "test-go-container-image:hello-go1.15.15-alpine",
 			"distro": "Alpine Linux v3.16",
 			"distroRelease": "3.16.2",
 			"collections": [
@@ -31,6 +31,14 @@
 					"version": "2.4-r1",
 					"licenses": [
 						"MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "openssl",
+					"version": "1.1.1q-r0",
+					"licenses": [
+						"OpenSSL"
 					]
 				},
 				{
@@ -72,14 +80,6 @@
 					"licenses": [
 						"GPL-2.0-only"
 					]
-				},
-				{
-					"type": "os",
-					"name": "openssl",
-					"version": "1.1.1q-r0",
-					"licenses": [
-						"OpenSSL"
-					]
 				}
 			],
 			"applications": [
@@ -90,7 +90,7 @@
 				},
 				{
 					"name": "go",
-					"version": "1.16.15",
+					"version": "1.15.15",
 					"path": "/bin/hello"
 				}
 			],
@@ -114,6 +114,56 @@
 			"complianceScanPassed": true,
 			"vulnerabilities": [
 				{
+					"id": "CVE-2021-38297",
+					"status": "fixed in 1.17.2, 1.16.9",
+					"cvss": 9.8,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+					"description": "Go before 1.16.9 and 1.17.x before 1.17.2 has a Buffer Overflow via large arguments in a function invocation from a WASM module, when GOARCH=wasm GOOS=js is used.",
+					"severity": "critical",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2021-38297",
+					"riskFactors": [
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Critical severity",
+						"Has fix"
+					],
+					"impactedVersions": [
+						"\u003c1.16.9"
+					],
+					"publishedDate": "2021-10-17T23:15:00-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2021-10-17T23:15:00-07:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2022-23806",
+					"status": "fixed in 1.17.7, 1.16.14",
+					"cvss": 9.1,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+					"description": "Curve.IsOnCurve in crypto/elliptic in Go before 1.16.14 and 1.17.x before 1.17.7 can incorrectly return true in situations with a big.Int value that is not a valid field element.",
+					"severity": "critical",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23806",
+					"riskFactors": [
+						"Attack vector: network",
+						"Critical severity",
+						"Has fix",
+						"Recent vulnerability",
+						"Attack complexity: low"
+					],
+					"impactedVersions": [
+						"\u003c1.16.14"
+					],
+					"publishedDate": "2022-02-10T17:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2022-02-10T17:15:00-08:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
 					"id": "CVE-2022-30580",
 					"status": "fixed in 1.18.3, 1.17.11",
 					"cvss": 7.8,
@@ -121,19 +171,19 @@
 					"description": "Code injection in Cmd.Start in os/exec before Go 1.17.11 and Go 1.18.3 allows execution of any binaries in the working directory named either \\\"..com\\\" or \\\"..exe\\\" by calling Cmd.Run, Cmd.Start, Cmd.Output, or Cmd.CombinedOutput when Cmd.Path is unset.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30580",
 					"riskFactors": [
-						"Attack complexity: low",
-						"Has fix",
 						"High severity",
-						"Recent vulnerability"
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Has fix"
 					],
 					"impactedVersions": [
 						"\u003c1.17.11"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -145,21 +195,21 @@
 					"description": "Programs which compile regular expressions from untrusted sources may be vulnerable to memory exhaustion or denial of service. The parsed regexp representation is linear in the size of the input, but in some cases the constant factor can be as high as 40,000, making relatively small regexps consume much larger amounts of memory. After fix, each regexp being parsed is limited to a 256 MB memory footprint. Regular expressions whose representation would use more space than that are rejected. Normal use of regular expressions is unaffected.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-41715",
 					"riskFactors": [
-						"DoS",
-						"Has fix",
-						"High severity",
 						"Recent vulnerability",
 						"Attack complexity: low",
-						"Attack vector: network"
+						"Attack vector: network",
+						"DoS",
+						"Has fix",
+						"High severity"
 					],
 					"impactedVersions": [
 						"\u003c1.18.7"
 					],
 					"publishedDate": "2022-10-14T08:16:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-10-14T08:16:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -171,21 +221,21 @@
 					"description": "A too-short encoded message can cause a panic in Float.GobDecode and Rat GobDecode in math/big in Go before 1.17.13 and 1.18.5, potentially allowing a denial of service.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-32189",
 					"riskFactors": [
+						"Attack complexity: low",
+						"Attack vector: network",
 						"DoS",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability",
-						"Attack complexity: low",
-						"Attack vector: network"
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.17.13"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -197,20 +247,20 @@
 					"description": "Uncontrolled recursion in Decoder.Decode in encoding/gob before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a message which contains deeply nested structures.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30635",
 					"riskFactors": [
+						"Recent vulnerability",
 						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
-						"High severity",
-						"Recent vulnerability"
+						"High severity"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -222,20 +272,20 @@
 					"description": "Uncontrolled recursion in Unmarshal in encoding/xml before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via unmarshalling an XML document into a Go struct which has a nested field that uses the \\'any\\' field tag.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30633",
 					"riskFactors": [
+						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability",
-						"Attack complexity: low"
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -247,7 +297,7 @@
 					"description": "Uncontrolled recursion in Glob in path/filepath before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a path containing a large number of path separators.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30632",
 					"riskFactors": [
 						"Attack complexity: low",
@@ -260,7 +310,7 @@
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -272,20 +322,20 @@
 					"description": "Uncontrolled recursion in Reader.Read in compress/gzip before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via an archive containing a large number of concatenated 0-length compressed files.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30631",
 					"riskFactors": [
-						"Recent vulnerability",
 						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
-						"High severity"
+						"High severity",
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -297,20 +347,20 @@
 					"description": "Uncontrolled recursion in Glob in io/fs before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a path which contains a large number of path separators.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30630",
 					"riskFactors": [
+						"Recent vulnerability",
 						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
-						"High severity",
-						"Recent vulnerability"
+						"High severity"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -322,20 +372,20 @@
 					"description": "Requests forwarded by ReverseProxy include the raw query parameters from the inbound request, including unparseable parameters rejected by net/http. This could permit query parameter smuggling when a Go proxy forwards a parameter with an unparseable value. After fix, ReverseProxy sanitizes the query parameters in the forwarded query when the outbound request\\'s Form field is set after the ReverseProxy. Director function returns, indicating that the proxy has parsed the query parameters. Proxies which do not parse query parameters continue to forward the original query parameters unchanged.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2880",
 					"riskFactors": [
-						"Has fix",
 						"High severity",
 						"Recent vulnerability",
 						"Attack complexity: low",
-						"Attack vector: network"
+						"Attack vector: network",
+						"Has fix"
 					],
 					"impactedVersions": [
 						"\u003c1.18.7"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -347,20 +397,20 @@
 					"description": "Reader.Read does not set a limit on the maximum size of file headers. A maliciously crafted archive could cause Read to allocate unbounded amounts of memory, potentially causing resource exhaustion or panics. After fix, Reader.Read limits the maximum size of header blocks to 1 MiB.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2879",
 					"riskFactors": [
-						"Attack complexity: low",
-						"Attack vector: network",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability"
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network"
 					],
 					"impactedVersions": [
 						"\u003c1.18.7"
 					],
 					"publishedDate": "2022-10-14T08:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-10-14T08:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -372,20 +422,20 @@
 					"description": "The generic P-256 feature in crypto/elliptic in Go before 1.17.9 and 1.18.x before 1.18.1 allows a panic via long scalar input.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-28327",
 					"riskFactors": [
+						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability",
-						"Attack complexity: low"
+						"Recent vulnerability"
 					],
 					"impactedVersions": [
 						"\u003c1.17.9"
 					],
 					"publishedDate": "2022-04-20T03:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-04-20T03:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -397,7 +447,7 @@
 					"description": "In Decoder.Skip in encoding/xml in Go before 1.17.12 and 1.18.x before 1.18.4, stack exhaustion and a panic can occur via a deeply nested XML document.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-28131",
 					"riskFactors": [
 						"Attack complexity: low",
@@ -410,7 +460,7 @@
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -422,22 +472,47 @@
 					"description": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-27664",
 					"riskFactors": [
-						"Attack complexity: low",
 						"Attack vector: network",
 						"DoS",
 						"Has fix",
 						"High severity",
-						"Recent vulnerability"
+						"Recent vulnerability",
+						"Attack complexity: low"
 					],
 					"impactedVersions": [
 						"\u003c1.18.6"
 					],
 					"publishedDate": "2022-09-06T11:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-09-06T11:15:00-07:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2022-24921",
+					"status": "fixed in 1.17.8, 1.16.15",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "regexp.Compile in Go before 1.16.15 and 1.17.x before 1.17.8 allows stack exhaustion via a deeply nested expression.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24921",
+					"riskFactors": [
+						"High severity",
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Has fix"
+					],
+					"impactedVersions": [
+						"\u003c1.16.15"
+					],
+					"publishedDate": "2022-03-05T12:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2022-03-05T12:15:00-08:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
 				{
@@ -448,7 +523,7 @@
 					"description": "encoding/pem in Go before 1.17.9 and 1.18.x before 1.18.1 has a Decode stack overflow via a large amount of PEM data.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24675",
 					"riskFactors": [
 						"Attack complexity: low",
@@ -461,8 +536,158 @@
 						"\u003c1.17.9"
 					],
 					"publishedDate": "2022-04-20T03:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-04-20T03:15:00-07:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2022-23773",
+					"status": "fixed in 1.17.7, 1.16.14",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+					"description": "cmd/go in Go before 1.16.14 and 1.17.x before 1.17.7 can misinterpret branch names that falsely appear to be version tags. This can lead to incorrect access control if an actor is supposed to be able to create branches but not tags.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23773",
+					"riskFactors": [
+						"High severity",
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Has fix"
+					],
+					"impactedVersions": [
+						"\u003c1.16.14"
+					],
+					"publishedDate": "2022-02-10T17:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2022-02-10T17:15:00-08:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2022-23772",
+					"status": "fixed in 1.17.7, 1.16.14",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "Rat.SetString in math/big in Go before 1.16.14 and 1.17.x before 1.17.7 has an overflow that can lead to Uncontrolled Memory Consumption.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23772",
+					"riskFactors": [
+						"Has fix",
+						"High severity",
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network"
+					],
+					"impactedVersions": [
+						"\u003c1.16.14"
+					],
+					"publishedDate": "2022-02-10T17:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2022-02-10T17:15:00-08:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2021-44716",
+					"status": "fixed in 1.17.5, 1.16.12",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "net/http in Go before 1.16.12 and 1.17.x before 1.17.5 allows uncontrolled memory consumption in the header canonicalization cache via HTTP/2 requests.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2021-44716",
+					"riskFactors": [
+						"Attack vector: network",
+						"Has fix",
+						"High severity",
+						"Recent vulnerability",
+						"Attack complexity: low"
+					],
+					"impactedVersions": [
+						"\u003c1.16.12"
+					],
+					"publishedDate": "2021-12-31T21:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2021-12-31T21:15:00-08:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2021-41772",
+					"status": "fixed in 1.17.3, 1.16.10",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "Go before 1.16.10 and 1.17.x before 1.17.3 allows an archive/zip Reader.Open panic via a crafted ZIP archive containing an invalid name or an empty filename field.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2021-41772",
+					"riskFactors": [
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Has fix",
+						"High severity"
+					],
+					"impactedVersions": [
+						"\u003c1.16.10"
+					],
+					"publishedDate": "2021-11-07T22:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2021-11-07T22:15:00-08:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2021-41771",
+					"status": "fixed in 1.17.3, 1.16.10",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "ImportedSymbols in debug/macho (for Open or OpenFat) in Go before 1.16.10 and 1.17.x before 1.17.3 Accesses a Memory Location After the End of a Buffer, aka an out-of-bounds slice situation.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2021-41771",
+					"riskFactors": [
+						"Attack complexity: low",
+						"Attack vector: network",
+						"Has fix",
+						"High severity",
+						"Recent vulnerability"
+					],
+					"impactedVersions": [
+						"\u003c1.16.10"
+					],
+					"publishedDate": "2021-11-07T22:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2021-11-07T22:15:00-08:00",
+					"layerTime": "1969-12-31T16:00:00-08:00"
+				},
+				{
+					"id": "CVE-2021-39293",
+					"status": "fixed in 1.17.1, 1.16.8",
+					"cvss": 7.5,
+					"vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+					"description": "In archive/zip in Go before 1.16.8 and 1.17.x before 1.17.1, a crafted archive header (falsely designating that many files are present) can cause a NewReader or OpenReader panic. NOTE: this issue exists because of an incomplete fix for CVE-2021-33196.",
+					"severity": "high",
+					"packageName": "go",
+					"packageVersion": "1.15.15",
+					"link": "https://nvd.nist.gov/vuln/detail/CVE-2021-39293",
+					"riskFactors": [
+						"Attack vector: network",
+						"Has fix",
+						"High severity",
+						"Recent vulnerability",
+						"Attack complexity: low"
+					],
+					"impactedVersions": [
+						"\u003c1.16.8"
+					],
+					"publishedDate": "2022-01-23T17:15:00-08:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
+					"fixDate": "2022-01-23T17:15:00-08:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
 				{
@@ -473,7 +698,7 @@
 					"description": "Go before 1.17 does not properly consider extraneous zero characters at the beginning of an IP address octet, which (in some situations) allows attackers to bypass access control that is based on IP addresses, because of unexpected octal interpretation. This affects net.ParseIP and net.ParseCIDR.",
 					"severity": "high",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2021-29923",
 					"riskFactors": [
 						"Attack complexity: low",
@@ -486,7 +711,7 @@
 						"\u003c1.17"
 					],
 					"publishedDate": "2021-08-07T10:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2021-08-07T10:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -498,20 +723,20 @@
 					"description": "Improper exposure of client IP addresses in net/http before Go 1.17.12 and Go 1.18.4 can be triggered by calling httputil.ReverseProxy.ServeHTTP with a Request.Header map containing a nil value for the X-Forwarded-For header, which causes ReverseProxy to set the client IP as the value of the X-Forwarded-For header.",
 					"severity": "medium",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-32148",
 					"riskFactors": [
+						"Recent vulnerability",
 						"Attack complexity: low",
 						"Attack vector: network",
 						"Has fix",
-						"Medium severity",
-						"Recent vulnerability"
+						"Medium severity"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -523,20 +748,20 @@
 					"description": "Acceptance of some invalid Transfer-Encoding headers in the HTTP/1 client in net/http before Go 1.17.12 and Go 1.18.4 allows HTTP request smuggling if combined with an intermediate server that also improperly fails to reject the header as invalid.",
 					"severity": "medium",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-1705",
 					"riskFactors": [
-						"Has fix",
 						"Medium severity",
 						"Recent vulnerability",
 						"Attack complexity: low",
-						"Attack vector: network"
+						"Attack vector: network",
+						"Has fix"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -548,19 +773,19 @@
 					"description": "Uncontrolled recursion in the Parse functions in go/parser before Go 1.17.12 and Go 1.18.4 allow an attacker to cause a panic due to stack exhaustion via deeply nested types or declarations.",
 					"severity": "medium",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-1962",
 					"riskFactors": [
-						"Attack complexity: low",
-						"Has fix",
 						"Medium severity",
-						"Recent vulnerability"
+						"Recent vulnerability",
+						"Attack complexity: low",
+						"Has fix"
 					],
 					"impactedVersions": [
 						"\u003c1.17.12"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				},
@@ -572,7 +797,7 @@
 					"description": "Non-random values for ticket_age_add in session tickets in crypto/tls before Go 1.17.11 and Go 1.18.3 allow an attacker that can observe TLS handshakes to correlate successive connections by comparing ticket ages during session resumption.",
 					"severity": "low",
 					"packageName": "go",
-					"packageVersion": "1.16.15",
+					"packageVersion": "1.15.15",
 					"link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30629",
 					"riskFactors": [
 						"Attack vector: network",
@@ -583,17 +808,17 @@
 						"\u003c1.17.11"
 					],
 					"publishedDate": "2022-08-10T13:15:00-07:00",
-					"discoveredDate": "2022-10-24T17:07:40-07:00",
+					"discoveredDate": "2022-10-24T17:07:27-07:00",
 					"fixDate": "2022-08-10T13:15:00-07:00",
 					"layerTime": "1969-12-31T16:00:00-08:00"
 				}
 			],
 			"vulnerabilityDistribution": {
-				"critical": 0,
-				"high": 15,
+				"critical": 2,
+				"high": 22,
 				"medium": 3,
 				"low": 1,
-				"total": 19
+				"total": 28
 			},
 			"vulnerabilityScanPassed": true,
 			"history": [
@@ -606,17 +831,17 @@
 					"instruction": "CMD [\"/bin/sh\"]"
 				},
 				{
-					"created": "2022-10-24T11:05:31-07:00",
+					"created": "2022-10-24T16:58:59-07:00",
 					"instruction": "COPY /build/hello /bin/hello # buildkit"
 				},
 				{
-					"created": "2022-10-24T11:05:31-07:00",
+					"created": "2022-10-24T16:58:59-07:00",
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T00:07:43.757146Z",
-			"scanID": "635728cf2944311a197a6665"
+			"scanTime": "2022-10-25T00:07:30.361721Z",
+			"scanID": "635728c26944036c0224b388"
 		}
 	],
-	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Abb710bb28b55df018ef45fdc4514cf4c1dda0f747962b7feedee54b46b316412"
+	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A581da378f2dea50b5efecc6d4008db5a2cee7fb856d75f808b2cfbcfbb23c89c"
 }

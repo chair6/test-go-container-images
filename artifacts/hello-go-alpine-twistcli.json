@@ -35,30 +35,6 @@
 				},
 				{
 					"type": "os",
-					"name": "musl",
-					"version": "1.2.3-r0",
-					"licenses": [
-						"MIT"
-					]
-				},
-				{
-					"type": "os",
-					"name": "pax-utils",
-					"version": "1.3.4-r0",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
-					"name": "busybox",
-					"version": "1.35.0-r17",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
 					"name": "openssl",
 					"version": "1.1.1q-r0",
 					"licenses": [
@@ -77,6 +53,30 @@
 					"type": "os",
 					"name": "alpine-baselayout",
 					"version": "3.2.0-r22",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "musl",
+					"version": "1.2.3-r0",
+					"licenses": [
+						"MIT"
+					]
+				},
+				{
+					"type": "os",
+					"name": "pax-utils",
+					"version": "1.3.4-r0",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "busybox",
+					"version": "1.35.0-r17",
 					"licenses": [
 						"GPL-2.0-only"
 					]
@@ -138,8 +138,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-24T22:51:11.774342Z",
-			"scanID": "635716df267a67f319107e91"
+			"scanTime": "2022-10-25T00:06:42.514191Z",
+			"scanID": "6357289266186d962c205702"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ad70fa69d4f64ad8367d1bfaf86ba29b8d9191de5401a738007147e1b97fe40b9"
