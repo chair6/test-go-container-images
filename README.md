@@ -26,7 +26,7 @@ There are various possible factors, and I'm not an expert, but some observations
 
 "Hello world" Go binary with no known vulnerabilities (the code has minimal function calls, and no dependencies).
 
-Tests a scanner's ability to complete a clean baseline scan against a benign Go binary.
+Tests a scanner's ability to complete a clean baseline scan against a benign Go binary, built with different Go versions and packaged in different container base images.
 
 Scanners should probably not be identifying any vulnerabilities.
 
