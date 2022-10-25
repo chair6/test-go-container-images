@@ -1,0 +1,79 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "test-go-container-image:hello2-go1.15.15-alpine",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "alpine",
+      "Name": "3.16.2"
+    },
+    "ImageID": "sha256:fba6f78bf3ad6207270c4aae34020239525277cecf405b6fb3b8a801594a7f5a",
+    "DiffIDs": [
+      "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+      "sha256:74bddcb15572e2d61205151317240d05a8db20e882a4fe2a2d233f2cc1fc8591",
+      "sha256:932432e9c4f6e6f949ee96d3ea649a9748e7438ff77459caedbc5b75363407e9"
+    ],
+    "RepoTags": [
+      "test-go-container-image:hello2-go1.15.15-alpine",
+      "ghcr.io/chair6/test-go-container-image:hello2-go1.15.15-alpine"
+    ],
+    "RepoDigests": [
+      "ghcr.io/chair6/test-go-container-image@sha256:ab44e66aedbdb6ba8b147e327ead14f99d86b2a9126a6099f20a5d06e1408d9d"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2022-10-25T15:50:56.681694672Z",
+      "history": [
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop) ADD file:2a949686d9886ac7c10582a6c29116fd29d3077d02755e87e111870d63607725 in / "
+        },
+        {
+          "created": "2022-08-09T17:19:53Z",
+          "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+          "empty_layer": true
+        },
+        {
+          "created": "2022-10-25T00:21:15Z",
+          "created_by": "COPY /build/hello /bin/hello # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-25T15:50:56Z",
+          "created_by": "COPY /build/hello /bin/hello2 # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2022-10-25T15:50:56Z",
+          "created_by": "ENTRYPOINT [\"/bin/hello\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7",
+          "sha256:74bddcb15572e2d61205151317240d05a8db20e882a4fe2a2d233f2cc1fc8591",
+          "sha256:932432e9c4f6e6f949ee96d3ea649a9748e7438ff77459caedbc5b75363407e9"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/bin/hello"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ]
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "test-go-container-image:hello2-go1.15.15-alpine (alpine 3.16.2)",
+      "Class": "os-pkgs",
+      "Type": "alpine"
+    }
+  ]
+}

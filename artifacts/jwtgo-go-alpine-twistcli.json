@@ -144,8 +144,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/jwtgo\"]"
 				}
 			],
-			"scanTime": "2022-10-25T03:21:15.414749Z",
-			"scanID": "6357562b6e3ac8c8f3c84779"
+			"scanTime": "2022-10-25T15:58:18.775042Z",
+			"scanID": "6358079a0dc0f2bc668b7aa4"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ab06be11978c6fd66defbea57c14cbdca8485b6578fb38e7f47d477885e356478"

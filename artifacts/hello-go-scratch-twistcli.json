@@ -50,8 +50,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T03:19:34.12579Z",
-			"scanID": "635755c66fa7258e733a821d"
+			"scanTime": "2022-10-25T15:56:31.494183Z",
+			"scanID": "6358072fe0160a897dfb2458"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A1c5a7b922c4a4051d2d7faf1461173eaf1b884c56153fbd185d4cfb671e2b54a"

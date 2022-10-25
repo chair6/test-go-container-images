@@ -174,8 +174,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/dockersdk\"]"
 				}
 			],
-			"scanTime": "2022-10-25T03:18:31.667588Z",
-			"scanID": "635755874b74923f8823518b"
+			"scanTime": "2022-10-25T15:55:39.23604Z",
+			"scanID": "635806fbb3669386b95dcd65"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3A384e3ebf181c9a4ef1f127db4113253cb0ed998d676228b9a2c796ce1c0a4d43"

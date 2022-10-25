@@ -227,10 +227,10 @@
    }
   },
   "db": {
-   "built": "2022-10-24T08:24:47Z",
+   "built": "2022-10-25T08:22:21Z",
    "schemaVersion": 5,
    "location": "/Users/jsf/Library/Caches/grype/db/5",
-   "checksum": "sha256:c5cf1925e69d72c9aed09acf6472d421d158069f645cadae81299282c979bf01",
+   "checksum": "sha256:c033b3c91c4e87627a100799cea0f4806ad2b4e3c82beaa4f3b687ec4391da60",
    "error": null
   }
  }

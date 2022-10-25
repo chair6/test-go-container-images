@@ -35,6 +35,22 @@
 				},
 				{
 					"type": "os",
+					"name": "busybox",
+					"version": "1.35.0-r27",
+					"licenses": [
+						"GPL-2.0-only"
+					]
+				},
+				{
+					"type": "os",
+					"name": "openssl",
+					"version": "3.0.5-r3",
+					"licenses": [
+						"Apache-2.0"
+					]
+				},
+				{
+					"type": "os",
 					"name": "ca-certificates",
 					"version": "20220614-r2",
 					"licenses": [
@@ -71,22 +87,6 @@
 					"version": "1.3.5-r1",
 					"licenses": [
 						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
-					"name": "busybox",
-					"version": "1.35.0-r27",
-					"licenses": [
-						"GPL-2.0-only"
-					]
-				},
-				{
-					"type": "os",
-					"name": "openssl",
-					"version": "3.0.5-r3",
-					"licenses": [
-						"Apache-2.0"
 					]
 				}
 			],
@@ -142,8 +142,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/hello\"]"
 				}
 			],
-			"scanTime": "2022-10-25T03:19:11.549116Z",
-			"scanID": "635755af78686353e5126fb0"
+			"scanTime": "2022-10-25T15:56:16.138163Z",
+			"scanID": "63580720a981ba578f4d0fff"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ac62d89581f41adacaec5c6e116931780a94fea3565f39a9c164047443bb46721"

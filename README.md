@@ -36,7 +36,7 @@ Same as above, but with 2 copies of the benign Go binary.
 
 Tests a scanner's behavior regarding duplication of content / issues.
 
-Scanners may report a varying number of vulnerabilities, depending on how they handle this.
+Scanners may report the same or double the number of vulnerabilities, depending on how they handle this scenario.
 
 ### gnutls-*
 

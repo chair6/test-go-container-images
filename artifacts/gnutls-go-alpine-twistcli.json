@@ -190,7 +190,7 @@
 						"\u003c3.7.7-r0"
 					],
 					"publishedDate": "2022-08-01T07:15:00-07:00",
-					"discoveredDate": "2022-10-24T20:18:42-07:00",
+					"discoveredDate": "2022-10-25T08:55:48-07:00",
 					"fixDate": "2022-08-01T07:15:00-07:00",
 					"layerTime": "2022-10-24T09:23:24-07:00"
 				}
@@ -233,8 +233,8 @@
 					"instruction": "ENTRYPOINT [\"/bin/gnutls\"]"
 				}
 			],
-			"scanTime": "2022-10-25T03:18:45.461397Z",
-			"scanID": "635755955908edd8daf5486c"
+			"scanTime": "2022-10-25T15:55:51.305617Z",
+			"scanID": "63580707e58ef44d39617812"
 		}
 	],
 	"consoleURL": "https://app2.prismacloud.io/compute?computeState=/monitor/vulnerabilities/images/ci?search=sha256%3Ae321e111ce381080b52459556fb1bd6dc431311668fbfd5e0897b8f109b4e0b7"
