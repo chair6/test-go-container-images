@@ -66,7 +66,7 @@
     "locations": [
      {
       "path": "/lib/apk/db/installed",
-      "layerID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+      "layerID": "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799"
      }
     ],
     "language": "",
@@ -150,7 +150,7 @@
     "locations": [
      {
       "path": "/lib/apk/db/installed",
-      "layerID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+      "layerID": "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799"
      }
     ],
     "language": "",
@@ -228,7 +228,7 @@
     "locations": [
      {
       "path": "/lib/apk/db/installed",
-      "layerID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+      "layerID": "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799"
      }
     ],
     "language": "",
@@ -301,7 +301,7 @@
     "locations": [
      {
       "path": "/lib/apk/db/installed",
-      "layerID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+      "layerID": "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799"
      }
     ],
     "language": "",
@@ -324,8 +324,8 @@
   "type": "image",
   "target": {
    "userInput": "test-go-container-image:hello-go-chainguard",
-   "imageID": "sha256:a1a8ce51d842009948b1d5e495228abc29fedccc8250d332ecbee05e544ab9af",
-   "manifestDigest": "sha256:6daa6e02cadf5f7cb5b6e1f56976c4e9531851c78da9c3fa3eaf5d484db96c76",
+   "imageID": "sha256:853f0ab3ca72b06e2873aa6d8e667b03b01728ad2271aa576b473acd30241f38",
+   "manifestDigest": "sha256:3564d9a301fba66aa4a4d001919d3a192f46f7998f30a93960326aa3408572fa",
    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
    "tags": [
     "test-go-container-image:hello-go-chainguard",
@@ -335,19 +335,19 @@
    "layers": [
     {
      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-     "digest": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63",
+     "digest": "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799",
      "size": 7014658
     },
     {
      "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-     "digest": "sha256:5e2ae4694412d4c32f3730b8a0ebf4a600474267785a6989fed6c42707cc3fcb",
+     "digest": "sha256:b0463e4ac914df8a25c26e2f171719e7d1f7c42cb97000b9e8c3ceef31203bc1",
      "size": 1813806
     }
    ],
-   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo4OTUsImRpZ2VzdCI6InNoYTI1NjphMWE4Y2U1MWQ4NDIwMDk5NDhiMWQ1ZTQ5NTIyOGFiYzI5ZmVkY2NjODI1MGQzMzJlY2JlZTA1ZTU0NGFiOWFmIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjcyODYyNzIsImRpZ2VzdCI6InNoYTI1Njo3M2VhZGEwZDU4NTI0MzhjY2Q5NTE3YzE1YTY3MWVhNDM0OTM4MjM1YWVlOWZmYjYwZTBkM2JhYTljODkwZTYzIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTgxNjA2NCwiZGlnZXN0Ijoic2hhMjU2OjVlMmFlNDY5NDQxMmQ0YzMyZjM3MzBiOGEwZWJmNGE2MDA0NzQyNjc3ODVhNjk4OWZlZDZjNDI3MDdjYzNmY2IifV19",
-   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNvbmZpZyI6eyJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJTU0xfQ0VSVF9GSUxFPS9ldGMvc3NsL2NlcnRzL2NhLWNlcnRpZmljYXRlcy5jcnQiXSwiRW50cnlwb2ludCI6WyIvYmluL2hlbGxvIl0sIk9uQnVpbGQiOm51bGx9LCJjcmVhdGVkIjoiMjAyMi0xMC0yNFQyMjo0MDo0Ni40NDU0OTI5N1oiLCJoaXN0b3J5IjpbeyJjcmVhdGVkIjoiMjAyMi0xMC0yNFQwMToyNzowN1oiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImF1dGhvciI6ImFwa28iLCJjb21tZW50IjoiVGhpcyBpcyBhbiBhcGtvIHNpbmdsZS1sYXllciBpbWFnZSJ9LHsiY3JlYXRlZCI6IjIwMjItMTAtMjRUMjI6NDA6NDYuNDQ1NDkyOTdaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL2J1aWxkL2hlbGxvIC9iaW4vaGVsbG8gIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMi0xMC0yNFQyMjo0MDo0Ni40NDU0OTI5N1oiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCIvYmluL2hlbGxvXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NzNlYWRhMGQ1ODUyNDM4Y2NkOTUxN2MxNWE2NzFlYTQzNDkzODIzNWFlZTlmZmI2MGUwZDNiYWE5Yzg5MGU2MyIsInNoYTI1Njo1ZTJhZTQ2OTQ0MTJkNGMzMmYzNzMwYjhhMGViZjRhNjAwNDc0MjY3Nzg1YTY5ODlmZWQ2YzQyNzA3Y2MzZmNiIl19fQ==",
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo4OTgsImRpZ2VzdCI6InNoYTI1Njo4NTNmMGFiM2NhNzJiMDZlMjg3M2FhNmQ4ZTY2N2IwM2IwMTcyOGFkMjI3MWFhNTc2YjQ3M2FjZDMwMjQxZjM4In0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjcyODYyNzIsImRpZ2VzdCI6InNoYTI1NjphZWE1ZWFhZWJkMGFiNDEwN2Y1NDAzODRkNTNhYjdkYTUzM2MwMzQ3MGZlOTRkMGUyNjhjNDZmMmFjZjdmNzk5In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MTgxNjA2NCwiZGlnZXN0Ijoic2hhMjU2OmIwNDYzZTRhYzkxNGRmOGEyNWMyNmUyZjE3MTcxOWU3ZDFmN2M0MmNiOTcwMDBiOWU4YzNjZWVmMzEyMDNiYzEifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNvbmZpZyI6eyJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJTU0xfQ0VSVF9GSUxFPS9ldGMvc3NsL2NlcnRzL2NhLWNlcnRpZmljYXRlcy5jcnQiXSwiRW50cnlwb2ludCI6WyIvYmluL2hlbGxvIl0sIk9uQnVpbGQiOm51bGx9LCJjcmVhdGVkIjoiMjAyMi0xMC0yNVQwMzoxMjo0Ni44MDExMzEyNTNaIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjItMTAtMjVUMDE6MjI6MTlaIiwiY3JlYXRlZF9ieSI6ImFwa28iLCJhdXRob3IiOiJhcGtvIiwiY29tbWVudCI6IlRoaXMgaXMgYW4gYXBrbyBzaW5nbGUtbGF5ZXIgaW1hZ2UifSx7ImNyZWF0ZWQiOiIyMDIyLTEwLTI1VDAzOjEyOjQ2LjgwMTEzMTI1M1oiLCJjcmVhdGVkX2J5IjoiQ09QWSAvYnVpbGQvaGVsbG8gL2Jpbi9oZWxsbyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIyLTEwLTI1VDAzOjEyOjQ2LjgwMTEzMTI1M1oiLCJjcmVhdGVkX2J5IjoiRU5UUllQT0lOVCBbXCIvYmluL2hlbGxvXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6YWVhNWVhYWViZDBhYjQxMDdmNTQwMzg0ZDUzYWI3ZGE1MzNjMDM0NzBmZTk0ZDBlMjY4YzQ2ZjJhY2Y3Zjc5OSIsInNoYTI1NjpiMDQ2M2U0YWM5MTRkZjhhMjVjMjZlMmYxNzE3MTllN2QxZjdjNDJjYjk3MDAwYjllOGMzY2VlZjMxMjAzYmMxIl19fQ==",
    "repoDigests": [
-    "ghcr.io/chair6/test-go-container-image@sha256:c1dd47489f8f464606f11844aedefb85785b85aa3ce3d14041bb0d959fa7c303"
+    "ghcr.io/chair6/test-go-container-image@sha256:9cc4bfc8135a38f8c06ccd6294e5f39d78f3a6655199e5a89868743dcef62932"
    ],
    "architecture": "amd64",
    "os": "linux"

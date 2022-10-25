@@ -54,6 +54,14 @@ Tests a scanner's ability to detect vulnerablities associated with a Go dependen
 
 Scanners should probably be identifying 1 vulnerability (maybe more depending on how they report vulnerabilities from different data sources; as noted at https://github.com/golang/vulndb/blob/master/data/osv/GO-2020-0017.json, there's another GHSA identifier that may be flagged and/or double-counted).
 
+### dockersdk-*
+
+Go binary which depends on the Docker SDK available from https://github.com/docker/docker. The 20.10.10 version of this Go SDK does not have any known CVEs, but the Docker release with the same version number does.
+
+Tests a scanner's (and underlying datasource's) ability to distinguish between released product (Docker binary) and similarly-named Go module (no known vulnerabilities).
+
+Scanners should probably not be identifying any vulnerabilities.
+
 ## Test Case Naming
 
 Generally, the pattern is `[testcase]-[goversion]-[baseimage]`:

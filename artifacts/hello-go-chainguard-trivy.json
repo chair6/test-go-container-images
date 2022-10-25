@@ -7,35 +7,35 @@
       "Family": "alpine",
       "Name": "3.17_alpha20220809"
     },
-    "ImageID": "sha256:a1a8ce51d842009948b1d5e495228abc29fedccc8250d332ecbee05e544ab9af",
+    "ImageID": "sha256:853f0ab3ca72b06e2873aa6d8e667b03b01728ad2271aa576b473acd30241f38",
     "DiffIDs": [
-      "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63",
-      "sha256:5e2ae4694412d4c32f3730b8a0ebf4a600474267785a6989fed6c42707cc3fcb"
+      "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799",
+      "sha256:b0463e4ac914df8a25c26e2f171719e7d1f7c42cb97000b9e8c3ceef31203bc1"
     ],
     "RepoTags": [
       "test-go-container-image:hello-go-chainguard",
       "ghcr.io/chair6/test-go-container-image:hello-go-chainguard"
     ],
     "RepoDigests": [
-      "ghcr.io/chair6/test-go-container-image@sha256:c1dd47489f8f464606f11844aedefb85785b85aa3ce3d14041bb0d959fa7c303"
+      "ghcr.io/chair6/test-go-container-image@sha256:9cc4bfc8135a38f8c06ccd6294e5f39d78f3a6655199e5a89868743dcef62932"
     ],
     "ImageConfig": {
       "architecture": "amd64",
       "author": "github.com/chainguard-dev/apko",
-      "created": "2022-10-24T22:40:46.44549297Z",
+      "created": "2022-10-25T03:12:46.801131253Z",
       "history": [
         {
-          "created": "2022-10-24T01:27:07Z",
+          "created": "2022-10-25T01:22:19Z",
           "created_by": "apko",
           "comment": "This is an apko single-layer image"
         },
         {
-          "created": "2022-10-24T22:40:46Z",
+          "created": "2022-10-25T03:12:46Z",
           "created_by": "COPY /build/hello /bin/hello # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2022-10-24T22:40:46Z",
+          "created": "2022-10-25T03:12:46Z",
           "created_by": "ENTRYPOINT [\"/bin/hello\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -45,8 +45,8 @@
       "rootfs": {
         "type": "layers",
         "diff_ids": [
-          "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63",
-          "sha256:5e2ae4694412d4c32f3730b8a0ebf4a600474267785a6989fed6c42707cc3fcb"
+          "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799",
+          "sha256:b0463e4ac914df8a25c26e2f171719e7d1f7c42cb97000b9e8c3ceef31203bc1"
         ]
       },
       "config": {
@@ -72,7 +72,7 @@
           "InstalledVersion": "3.0.5-r3",
           "FixedVersion": "3.0.6-r0",
           "Layer": {
-            "DiffID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+            "DiffID": "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3358",
@@ -114,7 +114,7 @@
           "InstalledVersion": "3.0.5-r3",
           "FixedVersion": "3.0.6-r0",
           "Layer": {
-            "DiffID": "sha256:73eada0d5852438ccd9517c15a671ea434938235aee9ffb60e0d3baa9c890e63"
+            "DiffID": "sha256:aea5eaaebd0ab4107f540384d53ab7da533c03470fe94d0e268c46f2acf7f799"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3358",
