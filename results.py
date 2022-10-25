@@ -45,4 +45,7 @@ for f in sorted(os.listdir('./images')):
         '{}:{}'.format(IMAGE_NAME, target), trivy_count, grype_count, docker_count, govulncheck_count, twistcli_count
     ])
 
-print(tabulate.tabulate(results, headers=['image', 'trivy', 'grype', 'docker', 'govulncheck', 'twistcli']))
+tabulated = tabulate.tabulate(results, headers=['image', 'trivy', 'grype', 'docker', 'govulncheck', 'twistcli'])
+print(tabulated)
+with open('results.txt', 'w') as fout:
+    fout.write(tabulated)
